@@ -1,7 +1,7 @@
 ---
 task_id: ENV-009
 title: "멱등성, cleanup과 failure recovery 검증"
-status: ready
+status: completed
 size: M
 milestone: Environment Foundation
 epic: ENV-E1
