@@ -6,7 +6,7 @@ issue: https://github.com/ch0992/rollout-proof/issues/43
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-000-work-order.md
-evaluation_version: 2
+evaluation_version: 3
 verdict: null
 ---
 
@@ -29,6 +29,8 @@ verdict: null
 | AC-7 | dependency review | provider SDK 없는 API capability 원칙 | 미평가 | |
 | AC-8 | document responsibility review | 환경/호환성/테스트가 별도 문서이고 중복 책임 없음 | 미평가 | |
 | AC-9 | test contract inspection | L0~L4, gate, flaky, evidence, cleanup 정의 | 미평가 | |
+| AC-10 | environment acceptance review | static부터 cleanup까지 단계와 mandatory 판정 존재 | 미평가 | |
+| AC-11 | command/report contract review | env-verify, check ID, exit code, JSON/Markdown evidence 정의 | 미평가 | |
 
 ## 3. 독립 평가 명령
 
@@ -37,6 +39,7 @@ rg -n 'Colima|Docker Desktop|kind|Apple Silicon|kubeconfig' docs/development-env
 rg -n 'EKS|GKE|AKS|RKE2|OpenShift|Supported|Release Tested' docs/cluster-compatibility.md
 rg -n '1.34|1.35|1.36|stable Kubernetes API|Required Capability' docs/cluster-compatibility.md
 rg -n 'L0|L1|L2|L3|L4|PR Test Gate|Release Test Gate|Flaky Test|Evidence|ALLOW_MUTATION' docs/test-strategy.md
+rg -n 'ENV-STATIC|ENV-RUNTIME|ENV-K8S|ENV-NET|ENV-ISOLATION|env-verify|Exit Code|Evidence Artifact' docs/local-environment-validation.md
 git diff --check
 ```
 

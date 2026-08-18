@@ -5,6 +5,7 @@
 > 관련 Issue: [#43](https://github.com/ch0992/rollout-proof/issues/43)  
 > 호환성 계약: [Kubernetes Cluster 호환성](./cluster-compatibility.md)
 > 테스트 계획: [테스트 전략 및 검증 계획](./test-strategy.md)
+> 구축 후 검증: [로컬 개발 인프라 검증 계약](./local-environment-validation.md)
 
 ## 1. 결정
 
@@ -216,7 +217,7 @@ secret, kubeconfig credential 및 token은 출력하지 않는다. 결과는 bug
 
 ## 14. Definition of Ready
 
-다음이 구현되면 로컬 개발환경이 Ready다.
+다음이 구현되고 [로컬 개발 인프라 검증 계약](./local-environment-validation.md)이 PASS하면 개발환경이 Ready다.
 
 1. Apple Silicon Mac에서 bootstrap/doctor/runtime-up/cluster-up/smoke/down이 재현된다.
 2. Docker Desktop 경로에서 같은 kind smoke test가 통과한다.

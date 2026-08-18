@@ -4,6 +4,7 @@
 > 책임: 구현과 호환성 주장을 검증하는 test level, scenario, 환경, 주기, evidence 및 통과 기준 정의  
 > 개발환경: [Mac 로컬 개발 환경](./development-environment.md)  
 > 지원 정책: [Kubernetes Cluster 호환성](./cluster-compatibility.md)
+> 제품 test 이전 환경 acceptance: [로컬 개발 인프라 검증 계약](./local-environment-validation.md)
 
 ## 1. 테스트 목표
 
@@ -13,6 +14,8 @@
 2. Kubernetes LIST/WATCH와 HTTP probe가 실제 failure를 누락 없이 관측한다.
 3. Mac, Linux, on-prem과 managed cluster 차이가 core 동작을 깨지 않는다.
 4. 실제 cluster 검증이 사용자의 기존 workload와 cluster를 훼손하지 않는다.
+
+Mac·Colima·Docker·kind 자체의 readiness는 제품 L0~L4 test에 포함하지 않고 환경 검증 계약에서 선행 검증한다.
 
 테스트 개수나 coverage 숫자만으로 완료를 판정하지 않는다. 각 requirement와 failure mode에 evidence가 있어야 한다.
 
@@ -314,4 +317,3 @@ Task test는 다음을 모두 만족해야 완료된다.
 - [kind Quick Start](https://kind.sigs.k8s.io/docs/user/quick-start/)
 - [kind Configuration](https://kind.sigs.k8s.io/docs/user/configuration/)
 - [Kubernetes Version Skew Policy](https://kubernetes.io/releases/version-skew-policy/)
-

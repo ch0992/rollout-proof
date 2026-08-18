@@ -11,6 +11,7 @@
 | [Mac 로컬 개발 환경](./development-environment.md) | Colima, kind, toolchain, kubeconfig 격리 및 local workflow | 0.1-draft |
 | [Kubernetes Cluster 호환성](./cluster-compatibility.md) | 지원 version, required API와 on-prem/cloud portability 정책 | 0.2-draft |
 | [테스트 전략 및 검증 계획](./test-strategy.md) | Test level, scenario, 실행 주기, gate, evidence 및 안전 계약 | 0.1-draft |
+| [로컬 개발 인프라 검증](./local-environment-validation.md) | 구축 후 runtime, kind, network, 격리, 멱등성 및 cleanup acceptance | 0.1-draft |
 | [AI 개발 운영 지침](./ai-development-playbook.md) | 이슈 크기, token budget, 구현·평가·재작업 workflow | 0.1-draft |
 | [Phase 0 Task 분해](./phase-0-task-breakdown.md) | 최초 기술 검증을 위한 Epic과 atomic Task backlog | backlog draft |
 | [Phase 0 Task 문서 인덱스](./task-index.md) | 작업지시서와 평가서의 연결 상태 | Draft |

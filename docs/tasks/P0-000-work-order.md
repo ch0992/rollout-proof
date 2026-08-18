@@ -7,7 +7,7 @@ milestone: Phase 0
 epic: P0-E1
 issue: https://github.com/ch0992/rollout-proof/issues/43
 branch: "docs/43-p0-000-development-environment"
-work_order_version: 2
+work_order_version: 3
 evaluation_document: ../evaluations/P0-000-evaluation.md
 ---
 
@@ -47,6 +47,7 @@ MacBook에서 재현 가능한 local Kubernetes 개발 환경과 on-prem/cloud K
 - `docs/development-environment.md`
 - `docs/cluster-compatibility.md`
 - `docs/test-strategy.md`
+- `docs/local-environment-validation.md`
 - `docs/implementation-spec.md`
 - `docs/phase-0-task-breakdown.md`
 - `docs/tasks/P0-031-work-order.md`
@@ -66,6 +67,8 @@ M Task 예외 사유: local topology와 실제 cluster compatibility는 서로�
 - [ ] AC-7: cloud SDK 없이 stable Kubernetes API capability를 사용하는 portability 원칙이 있다.
 - [ ] AC-8: 환경 구성, 제품 호환성, 테스트 계획이 세 개의 별도 문서로 분리된다.
 - [ ] AC-9: 테스트 문서에 L0~L4, PR/release gate, flaky/evidence/cleanup 정책이 있다.
+- [ ] AC-10: 환경 구축 후 static, tool, runtime, Kubernetes, network, isolation, idempotency 및 cleanup을 자동 판정하는 acceptance 계약이 있다.
+- [ ] AC-11: `make env-verify`의 check ID, verdict, exit code와 JSON/Markdown evidence가 정의된다.
 
 ## 7. 검증 명령
 
@@ -74,6 +77,7 @@ rg -n 'Colima|Docker Desktop|kind|Apple Silicon|kubeconfig' docs/development-env
 rg -n 'EKS|GKE|AKS|RKE2|OpenShift|Supported|Release Tested' docs/cluster-compatibility.md
 rg -n '1.34|1.35|1.36|stable Kubernetes API|Required Capability' docs/cluster-compatibility.md
 rg -n 'L0|L1|L2|L3|L4|PR Test Gate|Release Test Gate|Flaky Test|Evidence|ALLOW_MUTATION' docs/test-strategy.md
+rg -n 'ENV-STATIC|ENV-RUNTIME|ENV-K8S|ENV-NET|ENV-ISOLATION|env-verify|Exit Code|Evidence Artifact' docs/local-environment-validation.md
 git diff --check
 ```
 
