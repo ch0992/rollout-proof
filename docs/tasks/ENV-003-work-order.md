@@ -1,7 +1,7 @@
 ---
 task_id: ENV-003
 title: "Container provider adapter와 dev-doctor"
-status: backlog
+status: completed
 size: M
 milestone: Environment Foundation
 epic: ENV-E1

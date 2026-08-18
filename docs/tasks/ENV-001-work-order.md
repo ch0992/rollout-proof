@@ -1,7 +1,7 @@
 ---
 task_id: ENV-001
 title: "환경 자동화 계약, AI runbook과 AGENTS.md"
-status: in_progress
+status: completed
 size: S
 milestone: Environment Foundation
 epic: ENV-E1

@@ -17,10 +17,10 @@ ENV-001 → ENV-002 → ENV-003 → ENV-004 → ENV-006 → ENV-007 → ENV-008 
 
 | Task | GitHub Issue | 상태 | 작업지시서 | 평가서 |
 |---|---:|---|---|---|
-| ENV-001 | [#47](https://github.com/ch0992/rollout-proof/issues/47) | In progress | [작업지시서](./tasks/ENV-001-work-order.md) | [평가서](./evaluations/ENV-001-evaluation.md) |
-| ENV-002 | [#48](https://github.com/ch0992/rollout-proof/issues/48) | Backlog | [작업지시서](./tasks/ENV-002-work-order.md) | [평가서](./evaluations/ENV-002-evaluation.md) |
-| ENV-003 | [#49](https://github.com/ch0992/rollout-proof/issues/49) | Backlog | [작업지시서](./tasks/ENV-003-work-order.md) | [평가서](./evaluations/ENV-003-evaluation.md) |
-| ENV-004 | [#50](https://github.com/ch0992/rollout-proof/issues/50) | Backlog | [작업지시서](./tasks/ENV-004-work-order.md) | [평가서](./evaluations/ENV-004-evaluation.md) |
+| ENV-001 | [#47](https://github.com/ch0992/rollout-proof/issues/47) | Completed | [작업지시서](./tasks/ENV-001-work-order.md) | [평가서](./evaluations/ENV-001-evaluation.md) |
+| ENV-002 | [#48](https://github.com/ch0992/rollout-proof/issues/48) | Completed | [작업지시서](./tasks/ENV-002-work-order.md) | [평가서](./evaluations/ENV-002-evaluation.md) |
+| ENV-003 | [#49](https://github.com/ch0992/rollout-proof/issues/49) | Completed | [작업지시서](./tasks/ENV-003-work-order.md) | [평가서](./evaluations/ENV-003-evaluation.md) |
+| ENV-004 | [#50](https://github.com/ch0992/rollout-proof/issues/50) | Ready | [작업지시서](./tasks/ENV-004-work-order.md) | [평가서](./evaluations/ENV-004-evaluation.md) |
 | ENV-005 | [#51](https://github.com/ch0992/rollout-proof/issues/51) | Backlog | [작업지시서](./tasks/ENV-005-work-order.md) | [평가서](./evaluations/ENV-005-evaluation.md) |
 | ENV-006 | [#52](https://github.com/ch0992/rollout-proof/issues/52) | Backlog | [작업지시서](./tasks/ENV-006-work-order.md) | [평가서](./evaluations/ENV-006-evaluation.md) |
 | ENV-007 | [#53](https://github.com/ch0992/rollout-proof/issues/53) | Backlog | [작업지시서](./tasks/ENV-007-work-order.md) | [평가서](./evaluations/ENV-007-evaluation.md) |
