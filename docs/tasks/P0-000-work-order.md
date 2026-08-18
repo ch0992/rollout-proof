@@ -1,7 +1,7 @@
 ---
 task_id: P0-000
 title: "Mac 개발 및 Kubernetes 호환 환경 정의"
-status: in_progress
+status: completed
 size: M
 milestone: Phase 0
 epic: P0-E1
