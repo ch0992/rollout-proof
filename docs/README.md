@@ -9,7 +9,8 @@
 | [제품 스펙](./product-spec.md) | CLI, 상태 머신, 데이터 모델, 보안, 승인 기준 | 0.1-draft |
 | [엔지니어링 구현 스펙](./implementation-spec.md) | 언어, 라이브러리, 내부 구조, 테스트, 빌드 및 릴리스 방법론 | 0.1-draft |
 | [Mac 로컬 개발 환경](./development-environment.md) | Colima, kind, toolchain, kubeconfig 격리 및 local workflow | 0.1-draft |
-| [Kubernetes Cluster 호환성](./cluster-compatibility.md) | on-prem/cloud portability, test matrix 및 실제 cluster 안전 계약 | 0.1-draft |
+| [Kubernetes Cluster 호환성](./cluster-compatibility.md) | 지원 version, required API와 on-prem/cloud portability 정책 | 0.2-draft |
+| [테스트 전략 및 검증 계획](./test-strategy.md) | Test level, scenario, 실행 주기, gate, evidence 및 안전 계약 | 0.1-draft |
 | [AI 개발 운영 지침](./ai-development-playbook.md) | 이슈 크기, token budget, 구현·평가·재작업 workflow | 0.1-draft |
 | [Phase 0 Task 분해](./phase-0-task-breakdown.md) | 최초 기술 검증을 위한 Epic과 atomic Task backlog | backlog draft |
 | [Phase 0 Task 문서 인덱스](./task-index.md) | 작업지시서와 평가서의 연결 상태 | Draft |

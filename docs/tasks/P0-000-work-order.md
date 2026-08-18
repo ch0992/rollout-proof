@@ -7,7 +7,7 @@ milestone: Phase 0
 epic: P0-E1
 issue: https://github.com/ch0992/rollout-proof/issues/43
 branch: "docs/43-p0-000-development-environment"
-work_order_version: 1
+work_order_version: 2
 evaluation_document: ../evaluations/P0-000-evaluation.md
 ---
 
@@ -32,6 +32,7 @@ MacBook에서 재현 가능한 local Kubernetes 개발 환경과 on-prem/cloud K
 - kubeconfig/context/artifact 격리
 - kind 1.34~1.36 matrix
 - actual on-prem/cloud compatibility layer와 안전 계약
+- test level, scenario, 실행 주기, PR/release gate와 evidence 계약
 - P0-031/P0-034 작업 계약 보강
 
 ## 4. 제외 범위
@@ -45,6 +46,7 @@ MacBook에서 재현 가능한 local Kubernetes 개발 환경과 on-prem/cloud K
 
 - `docs/development-environment.md`
 - `docs/cluster-compatibility.md`
+- `docs/test-strategy.md`
 - `docs/implementation-spec.md`
 - `docs/phase-0-task-breakdown.md`
 - `docs/tasks/P0-031-work-order.md`
@@ -59,16 +61,19 @@ M Task 예외 사유: local topology와 실제 cluster compatibility는 서로�
 - [ ] AC-2: Colima 내장 k3s와 canonical kind 환경을 혼합하지 않는 규칙이 있다.
 - [ ] AC-3: Apple Silicon, Intel 및 Docker Desktop 대체 경로가 구분된다.
 - [ ] AC-4: Kubernetes 1.34~1.36 pinned node image matrix와 kubeconfig 격리가 정의된다.
-- [ ] AC-5: on-prem, K3s/RKE2, EKS, GKE, AKS, OpenShift의 검증 등급과 주기가 구분된다.
+- [ ] AC-5: on-prem, K3s/RKE2, EKS, GKE, AKS, OpenShift의 지원 상태와 테스트 evidence 상태가 구분된다.
 - [ ] AC-6: 실제 cluster mutation test에 context/namespace/opt-in/cleanup 안전장치가 있다.
 - [ ] AC-7: cloud SDK 없이 stable Kubernetes API capability를 사용하는 portability 원칙이 있다.
+- [ ] AC-8: 환경 구성, 제품 호환성, 테스트 계획이 세 개의 별도 문서로 분리된다.
+- [ ] AC-9: 테스트 문서에 L0~L4, PR/release gate, flaky/evidence/cleanup 정책이 있다.
 
 ## 7. 검증 명령
 
 ```bash
 rg -n 'Colima|Docker Desktop|kind|Apple Silicon|kubeconfig' docs/development-environment.md
 rg -n 'EKS|GKE|AKS|RKE2|OpenShift|Supported|Release Tested' docs/cluster-compatibility.md
-rg -n '1.34|1.35|1.36|ALLOW_MUTATION|stable Kubernetes API' docs/cluster-compatibility.md
+rg -n '1.34|1.35|1.36|stable Kubernetes API|Required Capability' docs/cluster-compatibility.md
+rg -n 'L0|L1|L2|L3|L4|PR Test Gate|Release Test Gate|Flaky Test|Evidence|ALLOW_MUTATION' docs/test-strategy.md
 git diff --check
 ```
 
@@ -79,4 +84,3 @@ git diff --check
 - PR title: `[P0-000] Define Mac and Kubernetes compatibility environments`
 - PR은 `Closes #43`과 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS 전에는 merge하지 않는다.
-

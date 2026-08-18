@@ -4,6 +4,7 @@
 > 기준 host: macOS MacBook  
 > 관련 Issue: [#43](https://github.com/ch0992/rollout-proof/issues/43)  
 > 호환성 계약: [Kubernetes Cluster 호환성](./cluster-compatibility.md)
+> 테스트 계획: [테스트 전략 및 검증 계획](./test-strategy.md)
 
 ## 1. 결정
 

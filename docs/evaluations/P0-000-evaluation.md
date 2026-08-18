@@ -6,7 +6,7 @@ issue: https://github.com/ch0992/rollout-proof/issues/43
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-000-work-order.md
-evaluation_version: 1
+evaluation_version: 2
 verdict: null
 ---
 
@@ -24,16 +24,19 @@ verdict: null
 | AC-2 | negative rule inspection | Colima k3s 혼합 금지와 이유 명시 | 미평가 | |
 | AC-3 | host/provider matrix | Apple Silicon/Intel/Docker Desktop 구분 | 미평가 | |
 | AC-4 | version/safety inspection | 3 minor, digest pin, kubeconfig 격리 | 미평가 | |
-| AC-5 | distribution matrix | on-prem/cloud별 검증 등급과 주기 명시 | 미평가 | |
+| AC-5 | policy/evidence review | on-prem/cloud 지원 상태와 테스트 evidence 상태 분리 | 미평가 | |
 | AC-6 | mutation threat review | explicit context/namespace/opt-in/cleanup 모두 존재 | 미평가 | |
 | AC-7 | dependency review | provider SDK 없는 API capability 원칙 | 미평가 | |
+| AC-8 | document responsibility review | 환경/호환성/테스트가 별도 문서이고 중복 책임 없음 | 미평가 | |
+| AC-9 | test contract inspection | L0~L4, gate, flaky, evidence, cleanup 정의 | 미평가 | |
 
 ## 3. 독립 평가 명령
 
 ```bash
 rg -n 'Colima|Docker Desktop|kind|Apple Silicon|kubeconfig' docs/development-environment.md
 rg -n 'EKS|GKE|AKS|RKE2|OpenShift|Supported|Release Tested' docs/cluster-compatibility.md
-rg -n '1.34|1.35|1.36|ALLOW_MUTATION|stable Kubernetes API' docs/cluster-compatibility.md
+rg -n '1.34|1.35|1.36|stable Kubernetes API|Required Capability' docs/cluster-compatibility.md
+rg -n 'L0|L1|L2|L3|L4|PR Test Gate|Release Test Gate|Flaky Test|Evidence|ALLOW_MUTATION' docs/test-strategy.md
 git diff --check
 ```
 
@@ -67,4 +70,3 @@ Safety: 미평가
 Scope: 미평가
 Traceability: 미평가
 ```
-
