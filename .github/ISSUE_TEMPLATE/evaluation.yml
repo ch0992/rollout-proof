@@ -1,0 +1,55 @@
+name: Evaluation or rework
+description: 구현 Task의 독립 평가 결과와 제한된 재작업
+title: "[EVAL] "
+labels: ["evaluation"]
+body:
+  - type: input
+    id: task
+    attributes:
+      label: Evaluated task
+      description: 평가할 Task 링크 또는 ID
+    validations:
+      required: true
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: Verdict
+      options: [PASS, FAIL, INCONCLUSIVE]
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Acceptance evidence
+      description: AC별 PASS/FAIL과 test, command, artifact 근거를 적습니다.
+      placeholder: |
+        AC-1: PASS — test name/output
+        AC-2: FAIL — reproduction
+    validations:
+      required: true
+  - type: textarea
+    id: mandatory
+    attributes:
+      label: Mandatory rubric
+      placeholder: |
+        Correctness: PASS
+        Scope: PASS
+        Tests: PASS
+        Safety: N/A
+        Maintainability: PASS
+        Documentation: PASS
+    validations:
+      required: true
+  - type: textarea
+    id: rework
+    attributes:
+      label: Required rework
+      description: FAIL/INCONCLUSIVE일 때 최소 변경, 허용 파일, 재현 test를 적습니다.
+  - type: textarea
+    id: commands
+    attributes:
+      label: Evaluation commands
+      render: shell
+    validations:
+      required: true
+
