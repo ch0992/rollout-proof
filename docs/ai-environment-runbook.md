@@ -44,6 +44,8 @@ rolloutproof-env-deactivate
 10. 평가서에 evidence 연결
 ```
 
+기본 provider와 Kubernetes minor는 각각 `docker-desktop`, `1.36`이다. 검증 run을 명시적으로 식별하려면 `make env-verify RUN_ID=<id>`를 사용한다. 이어지는 `make env-report`는 `.work/last-environment-run-id`에 기록된 동일 run의 입력으로 report를 다시 생성한다.
+
 ## 3. 중단 조건
 
 - Docker context가 예상값과 다름
