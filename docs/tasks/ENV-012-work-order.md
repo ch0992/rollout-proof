@@ -1,7 +1,7 @@
 ---
 task_id: ENV-012
 title: "Environment Make entrypoints와 clean-room rehearsal"
-status: ready
+status: completed
 size: M
 milestone: Environment Foundation Follow-up
 epic: ENV-E1
@@ -33,12 +33,12 @@ evaluation_document: ../evaluations/ENV-012-evaluation.md
 
 ## Acceptance Criteria
 
-- [ ] AC-1: `env-check`와 `env-plan`이 mutation 없이 실행된다.
-- [ ] AC-2: apply와 cleanup target이 기존 opt-in 및 소유권 검사를 보존한다.
-- [ ] AC-3: `env-verify`와 `env-report`가 동일 run ID evidence를 사용한다.
-- [ ] AC-4: Make target 계약 테스트가 실제 환경 변경 없이 통과한다.
-- [ ] AC-5: clean-room 재구축과 두 번째 apply 멱등성이 검증된다.
-- [ ] AC-6: global kubeconfig와 unrelated Docker 자원이 보존된다.
+- [x] AC-1: `env-check`와 `env-plan`이 mutation 없이 실행된다.
+- [x] AC-2: apply와 cleanup target이 기존 opt-in 및 소유권 검사를 보존한다.
+- [x] AC-3: `env-verify`와 `env-report`가 동일 run ID evidence를 사용한다.
+- [x] AC-4: Make target 계약 테스트가 실제 환경 변경 없이 통과한다.
+- [x] AC-5: clean-room 재구축과 두 번째 apply 멱등성이 검증된다.
+- [x] AC-6: global kubeconfig와 unrelated Docker 자원이 보존된다.
 
 ## 검증 명령
 
