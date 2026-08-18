@@ -7,7 +7,7 @@ milestone: Phase 0
 epic: P0-E6
 issue: https://github.com/ch0992/rollout-proof/issues/37
 branch: "chore/37-p0-031-kind-bootstrap"
-work_order_version: 1
+work_order_version: 2
 evaluation_document: ../evaluations/P0-031-evaluation.md
 ---
 
@@ -26,12 +26,17 @@ Kind cluster bootstrap을 독립적으로 구현하고 후속 Task가 의존할 
 
 - Requirement ID: `TEST-E2E-001`
 - [엔지니어링 구현 스펙](../implementation-spec.md)
+- [Mac 로컬 개발 환경](../development-environment.md)
+- [Kubernetes Cluster 호환성](../cluster-compatibility.md)
 - 관련 세부 section은 Issue 생성 시 requirement와 함께 고정한다.
 
 ## 4. 작업 범위
 
 - 지원 version parameter kind create/delete
 - 고유 cluster name과 idempotent cleanup
+- Colima Docker와 Docker Desktop provider 진단
+- digest-pinned Kubernetes 1.34~1.36 version manifest
+- repository-local kubeconfig 격리
 
 ## 5. 제외 범위
 
@@ -52,6 +57,8 @@ Kind cluster bootstrap을 독립적으로 구현하고 후속 Task가 의존할 
 - [ ] AC-2: 재실행 시 기존 cluster를 명시적으로 처리한다.
 - [ ] AC-3: cleanup이 다른 kind cluster를 삭제하지 않는다.
 - [ ] AC-4: README에 prerequisites와 명령이 있다.
+- [ ] AC-5: 사용자의 global kubeconfig current-context를 변경하지 않는다.
+- [ ] AC-6: cluster 삭제가 명시된 RolloutProof cluster 이름으로 제한된다.
 
 ## 8. 구현 절차
 
@@ -92,4 +99,3 @@ Acceptance evidence:
 Known limitations:
 Commit SHA:
 ```
-

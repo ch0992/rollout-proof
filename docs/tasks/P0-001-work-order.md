@@ -1,7 +1,7 @@
 ---
 task_id: P0-001
 title: "Go module과 CLI entrypoint 생성"
-status: ready
+status: backlog
 size: XS
 milestone: Phase 0
 epic: P0-E1
