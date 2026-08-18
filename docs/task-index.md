@@ -5,7 +5,7 @@
 | Task | Epic | 작업지시서 | 평가서 | Issue | 상태 |
 |---|---|---|---|---|---|
 | P0-000 | P0-E1 | [작업지시서](./tasks/P0-000-work-order.md) | [평가서](./evaluations/P0-000-evaluation.md) | [#43](https://github.com/ch0992/rollout-proof/issues/43) | Completed |
-| P0-001 | P0-E1 | [작업지시서](./tasks/P0-001-work-order.md) | [평가서](./evaluations/P0-001-evaluation.md) | [#7](https://github.com/ch0992/rollout-proof/issues/7) | Backlog, blocked by #43 |
+| P0-001 | P0-E1 | [작업지시서](./tasks/P0-001-work-order.md) | [평가서](./evaluations/P0-001-evaluation.md) | [#7](https://github.com/ch0992/rollout-proof/issues/7) | Ready |
 | P0-002 | P0-E1 | [작업지시서](./tasks/P0-002-work-order.md) | [평가서](./evaluations/P0-002-evaluation.md) | [#8](https://github.com/ch0992/rollout-proof/issues/8) | Backlog |
 | P0-003 | P0-E1 | [작업지시서](./tasks/P0-003-work-order.md) | [평가서](./evaluations/P0-003-evaluation.md) | [#9](https://github.com/ch0992/rollout-proof/issues/9) | Backlog |
 | P0-004 | P0-E1 | [작업지시서](./tasks/P0-004-work-order.md) | [평가서](./evaluations/P0-004-evaluation.md) | [#10](https://github.com/ch0992/rollout-proof/issues/10) | Backlog |
