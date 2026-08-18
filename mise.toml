@@ -1,0 +1,12 @@
+[settings]
+experimental = false
+lockfile = true
+not_found_auto_install = false
+
+[tasks.env-plan]
+description = "Print the read-only local tool bootstrap plan"
+run = "scripts/env/bootstrap.sh"
+
+[tasks.env-bootstrap]
+description = "Install the pinned local toolchain (requires APPLY=true)"
+run = "APPLY=true scripts/env/bootstrap.sh"

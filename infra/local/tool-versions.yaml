@@ -1,0 +1,38 @@
+schema_version: 1
+updated_at: "2026-08-18"
+platforms:
+  - darwin_arm64
+  - darwin_amd64
+
+bootstrap:
+  package_manager: homebrew
+  formulae:
+    - mise
+
+tools:
+  go:
+    version: "1.26.2"
+    version_source: "https://go.dev/dl/"
+    checksum_source:
+      darwin_arm64: "https://go.dev/dl/go1.26.2.darwin-arm64.tar.gz.sha256"
+      darwin_amd64: "https://go.dev/dl/go1.26.2.darwin-amd64.tar.gz.sha256"
+  kind:
+    version: "0.32.0"
+    version_source: "https://github.com/kubernetes-sigs/kind/releases/tag/v0.32.0"
+    checksum_source:
+      darwin_arm64: "https://github.com/kubernetes-sigs/kind/releases/download/v0.32.0/kind-darwin-arm64.sha256sum"
+      darwin_amd64: "https://github.com/kubernetes-sigs/kind/releases/download/v0.32.0/kind-darwin-amd64.sha256sum"
+  kubectl:
+    version: "1.36.3"
+    version_source: "https://dl.k8s.io/release/stable.txt"
+    checksum_source:
+      darwin_arm64: "https://dl.k8s.io/release/v1.36.3/bin/darwin/arm64/kubectl.sha256"
+      darwin_amd64: "https://dl.k8s.io/release/v1.36.3/bin/darwin/amd64/kubectl.sha256"
+
+external_tools:
+  homebrew:
+    minimum_version: "4.0.0"
+    source: "https://brew.sh/"
+  docker:
+    version_policy: "provider-managed"
+    source: "https://docs.docker.com/desktop/setup/install/mac-install/"
