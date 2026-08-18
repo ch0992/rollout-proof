@@ -2,8 +2,10 @@
 
 set -euo pipefail
 
-readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-readonly REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+readonly SCRIPT_DIR
+REPO_ROOT="$(cd "${SCRIPT_DIR}/../.." && pwd)"
+readonly REPO_ROOT
 readonly MANIFEST="${REPO_ROOT}/infra/local/tool-versions.yaml"
 readonly BREWFILE="${REPO_ROOT}/Brewfile"
 readonly APPLY="${APPLY:-false}"
@@ -54,9 +56,12 @@ esac
 [[ -f "${BREWFILE}" ]] || fail "Brewfile not found: ${BREWFILE}"
 command -v brew >/dev/null 2>&1 || fail "Homebrew is required; install it manually from https://brew.sh/"
 
-readonly GO_VERSION="$(manifest_value go version)"
-readonly KIND_VERSION="$(manifest_value kind version)"
-readonly KUBECTL_VERSION="$(manifest_value kubectl version)"
+GO_VERSION="$(manifest_value go version)"
+readonly GO_VERSION
+KIND_VERSION="$(manifest_value kind version)"
+readonly KIND_VERSION
+KUBECTL_VERSION="$(manifest_value kubectl version)"
+readonly KUBECTL_VERSION
 
 for tool in go kind kubectl; do
   version="$(manifest_value "${tool}" version)"
