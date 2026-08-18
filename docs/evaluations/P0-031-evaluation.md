@@ -6,7 +6,7 @@ issue: https://github.com/ch0992/rollout-proof/issues/37
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-031-work-order.md
-evaluation_version: 1
+evaluation_version: 2
 verdict: null
 ---
 
@@ -31,6 +31,8 @@ verdict: null
 | AC-2 | command + 관련 inspection | 재실행 시 기존 cluster를 명시적으로 처리한다. | 미평가 | |
 | AC-3 | command + 관련 inspection | cleanup이 다른 kind cluster를 삭제하지 않는다. | 미평가 | |
 | AC-4 | command + 관련 inspection | README에 prerequisites와 명령이 있다. | 미평가 | |
+| AC-5 | kubeconfig before/after 비교 | global current-context가 바뀌지 않는다. | 미평가 | |
+| AC-6 | negative cleanup test | 다른 kind cluster가 보존된다. | 미평가 | |
 
 ## 4. 필수 평가
 
@@ -85,4 +87,3 @@ Documentation: 미평가
 - Evaluated commit:
 - Verdict:
 - Evidence artifact:
-

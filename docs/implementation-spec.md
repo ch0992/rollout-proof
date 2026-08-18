@@ -4,6 +4,7 @@
 > 작성 기준: 2026-08-18  
 > 관련 문서: [제품 스펙](./product-spec.md), [초기 기획서](./initial-product-plan.md), [효용성 평가](./utility-evaluation.md)
 > 개발 운영: [AI 개발 운영 지침](./ai-development-playbook.md), [Phase 0 Task 분해](./phase-0-task-breakdown.md)
+> 환경 계약: [Mac 로컬 개발 환경](./development-environment.md), [Kubernetes Cluster 호환성](./cluster-compatibility.md)
 
 ## 1. 문서 목적
 
@@ -415,6 +416,8 @@ fake clock과 table-driven test를 사용한다. 핵심 state machine과 analyze
 ### 13.3 E2E test
 
 kind cluster에서 실제 Deployment, ReplicaSet, Pod, Service, EndpointSlice 변화를 검증한다.
+
+Mac의 canonical environment는 Colima Docker runtime 위의 kind이며 Colima 내장 k3s와 혼합하지 않는다. CI와 Mac은 같은 kind config와 digest-pinned node image를 사용한다. 실제 on-prem/cloud 검증은 [Kubernetes Cluster 호환성](./cluster-compatibility.md)의 L3/L4 suite와 mutation safety 계약을 따른다.
 
 PR smoke:
 

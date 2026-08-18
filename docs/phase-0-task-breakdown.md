@@ -21,12 +21,15 @@ Phase 0의 목표는 제품 전체를 만드는 것이 아니다.
 | P0-E5 Timeline Prototype | 두 관측 stream의 통합 report | E3, E4 |
 | P0-E6 Reproduction | kind fixture 반복 검증 | E5 |
 
+모든 구현의 선행 Task는 `P0-000` Mac 개발 및 Kubernetes 호환 환경 정의다. `P0-000`이 PASS하기 전에는 `P0-001`을 Ready로 전환하지 않는다.
+
 ## 3. Task backlog
 
 ### P0-E1 Foundation
 
 | ID | 크기 | Task | 핵심 검증 |
 |---|---|---|---|
+| P0-000 | M | Mac 개발 및 Kubernetes 호환 환경 정의 | local topology와 actual cluster test 계약 |
 | P0-001 | XS | Go 1.26 module과 CLI entrypoint 생성 | `rollout-proof version` 실행 |
 | P0-002 | XS | Makefile의 build/test/lint target 정의 | clean environment에서 명령 성공 |
 | P0-003 | S | Cobra root command와 stdout/stderr 분리 | help/version snapshot |
@@ -92,7 +95,7 @@ Phase 0의 목표는 제품 전체를 만드는 것이 아니다.
 ## 4. Dependency path
 
 ```text
-P0-001 → 003 → 006 → 007 → 008 → 009
+P0-000 → P0-001 → 003 → 006 → 007 → 008 → 009
                          ├→ 013 → 014 → 015 → 016/017 ┐
                          └→ 019 → 020 → 021/022/023 ──┼→ 026 → 027 → 030
                                                       └→ 031 → 032/033 → 034 → 035 → 036
