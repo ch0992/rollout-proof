@@ -1,7 +1,7 @@
 ---
 task_id: ENV-005
 title: "Colima runtime 대체 adapter"
-status: ready
+status: completed
 size: M
 milestone: Environment Foundation
 epic: ENV-E1

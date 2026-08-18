@@ -1,7 +1,7 @@
 ---
 task_id: ENV-010
 title: "Linux CI kind matrix와 provider portability"
-status: backlog
+status: ready
 size: M
 milestone: Environment Foundation
 epic: ENV-E1
