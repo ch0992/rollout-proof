@@ -7,7 +7,7 @@ milestone: Environment Foundation
 epic: ENV-E1
 issue: https://github.com/ch0992/rollout-proof/issues/51
 branch: "feat/51-env-005-colima-provider"
-work_order_version: 1
+work_order_version: 2
 evaluation_document: ../evaluations/ENV-005-evaluation.md
 ---
 
@@ -26,7 +26,7 @@ Colima runtime 대체 adapter을 독립적으로 구현하고 후속 환경 Task
 
 ## 작업 범위
 
-- `scripts/env/providers/colima.sh`
+- `infra/local/providers/colima.sh`
 - `infra/local/providers/colima.yaml`
 - `test/environment/colima_test.sh`
 
