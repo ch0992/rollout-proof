@@ -1,7 +1,7 @@
 ---
 task_id: ENV-006
 title: "Digest-pinned kind cluster IaC"
-status: backlog
+status: completed
 size: M
 milestone: Environment Foundation
 epic: ENV-E1
