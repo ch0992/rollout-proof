@@ -1,7 +1,7 @@
 ---
 task_id: ENV-004
 title: "Docker Desktop runtime 검증 adapter"
-status: ready
+status: completed
 size: M
 milestone: Environment Foundation
 epic: ENV-E1
