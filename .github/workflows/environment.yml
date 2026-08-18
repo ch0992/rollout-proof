@@ -27,7 +27,7 @@ jobs:
       matrix:
         kubernetes: ["1.34", "1.35", "1.36"]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install kind and kubectl
         env:
@@ -48,7 +48,7 @@ jobs:
 
       - name: Preserve report and checksums
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: environment-kubernetes-${{ matrix.kubernetes }}
           path: .work/artifacts/environment/ci-${{ matrix.kubernetes }}/
