@@ -7,7 +7,7 @@ milestone: Environment Foundation
 epic: ENV-E1
 issue: https://github.com/ch0992/rollout-proof/issues/50
 branch: "feat/50-env-004-docker-desktop"
-work_order_version: 1
+work_order_version: 2
 evaluation_document: ../evaluations/ENV-004-evaluation.md
 ---
 
@@ -26,7 +26,8 @@ Docker Desktop runtime 검증 adapter을 독립적으로 구현하고 후속 환
 
 ## 작업 범위
 
-- `scripts/env/providers/docker-desktop.sh`
+- `infra/local/providers/docker-desktop.sh`
+- `scripts/env/provider.sh`의 adapter 경로 연결 검증
 - `test/environment/docker_desktop_test.sh`
 
 ## 제외 범위
