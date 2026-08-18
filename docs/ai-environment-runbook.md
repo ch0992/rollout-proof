@@ -13,6 +13,20 @@
 - project cluster: `rolloutproof-dev`
 - kubeconfig: `.work/kubeconfig`
 
+## 개발 shell 활성화
+
+클러스터 구축 후 어느 디렉터리에서든 저장소의 절대경로로 활성화 스크립트를 source한다.
+
+```bash
+source /Users/yg/workspace/rollout-proof/scripts/env/activate.sh
+kubectl get pods -A
+rolloutproof-env-deactivate
+```
+
+스크립트는 기존 `KUBECONFIG`와 mise trust 설정을 보존하고 비활성화할 때 복원한다. 사용자 `.zshrc`나 global kubeconfig current-context는 변경하지 않는다.
+
+`export KUBECONFIG="$PWD/.work/kubeconfig"`는 현재 디렉터리가 저장소가 아닐 경우 잘못된 경로를 만든다. 특히 홈 디렉터리에서 이 명령을 사용하면 kubectl이 설정을 읽지 못하고 `localhost:8080`으로 fallback할 수 있으므로 사용하지 않는다.
+
 이 값은 초기 inventory이며 AI는 매 실행 시 다시 검사한다.
 
 ## 2. 실행 순서

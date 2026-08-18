@@ -38,10 +38,10 @@ Docker Desktop runtime 검증 adapter을 독립적으로 구현하고 후속 환
 
 ## Acceptance Criteria
 
-- [ ] AC-1: desktop-linux context와 daemon을 검증한다.
-- [ ] AC-2: Docker Desktop 설정을 변경하지 않는다.
-- [ ] AC-3: unavailable 상태에 recovery 안내가 있다.
-- [ ] AC-4: 기존 container/image를 삭제하지 않는다.
+- [x] AC-1: desktop-linux context와 daemon을 검증한다.
+- [x] AC-2: Docker Desktop 설정을 변경하지 않는다.
+- [x] AC-3: unavailable 상태에 recovery 안내가 있다.
+- [x] AC-4: 기존 container/image를 삭제하지 않는다.
 
 ## 검증
 

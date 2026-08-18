@@ -38,10 +38,10 @@ Kubeconfig, namespace와 artifact 격리을 독립적으로 구현하고 후속 
 
 ## Acceptance Criteria
 
-- [ ] AC-1: kubeconfig가 .work에 생성된다.
-- [ ] AC-2: global current-context가 보존된다.
-- [ ] AC-3: test namespace 밖 mutation이 없다.
-- [ ] AC-4: cleanup이 run ID와 label로 제한된다.
+- [x] AC-1: kubeconfig가 .work에 생성된다.
+- [x] AC-2: global current-context가 보존된다.
+- [x] AC-3: test namespace 밖 mutation이 없다.
+- [x] AC-4: cleanup이 run ID와 label로 제한된다.
 
 ## 검증
 

@@ -38,10 +38,10 @@ Container provider adapter와 dev-doctor을 독립적으로 구현하고 후속 
 
 ## Acceptance Criteria
 
-- [ ] AC-1: 공통 provider interface가 구현된다.
-- [ ] AC-2: doctor가 secret 없이 JSON/Markdown 상태를 출력한다.
-- [ ] AC-3: missing/incompatible 상태가 typed exit code다.
-- [ ] AC-4: 실제 환경을 수정하지 않는다.
+- [x] AC-1: 공통 provider interface가 구현된다.
+- [x] AC-2: doctor가 secret 없이 JSON/Markdown 상태를 출력한다.
+- [x] AC-3: missing/incompatible 상태가 typed exit code다.
+- [x] AC-4: 실제 환경을 수정하지 않는다.
 
 ## 검증
 

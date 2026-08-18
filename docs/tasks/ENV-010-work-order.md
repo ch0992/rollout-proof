@@ -37,10 +37,10 @@ Linux CI kind matrix와 provider portability을 독립적으로 구현하고 후
 
 ## Acceptance Criteria
 
-- [ ] AC-1: Linux Docker에서 공통 kind IaC를 사용한다.
-- [ ] AC-2: 1.34~1.36 matrix가 실행된다.
-- [ ] AC-3: artifact와 checksum을 보존한다.
-- [ ] AC-4: Mac provider 분기가 core test에 침투하지 않는다.
+- [x] AC-1: Linux Docker에서 공통 kind IaC를 사용한다.
+- [x] AC-2: 1.34~1.36 matrix가 실행된다.
+- [x] AC-3: artifact와 checksum을 보존한다.
+- [x] AC-4: Mac provider 분기가 core test에 침투하지 않는다.
 
 ## 검증
 

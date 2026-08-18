@@ -38,10 +38,10 @@ Digest-pinned kind cluster IaC을 독립적으로 구현하고 후속 환경 Tas
 
 ## Acceptance Criteria
 
-- [ ] AC-1: 1.34~1.36 image digest가 고정된다.
-- [ ] AC-2: rolloutproof-dev만 생성/재사용한다.
-- [ ] AC-3: config drift 시 자동 삭제하지 않는다.
-- [ ] AC-4: control-plane 1과 worker 1이 Ready다.
+- [x] AC-1: 1.34~1.36 image digest가 고정된다.
+- [x] AC-2: rolloutproof-dev만 생성/재사용한다.
+- [x] AC-3: config drift 시 자동 삭제하지 않는다.
+- [x] AC-4: control-plane 1과 worker 1이 Ready다.
 
 ## 검증
 

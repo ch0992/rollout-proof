@@ -151,6 +151,7 @@ local/E2E는 사용자의 기본 kubeconfig를 직접 수정하지 않는다.
 
 - 생성 위치: repository 내부 ignored directory인 `.work/kubeconfig`
 - 모든 test command는 명시적 `--kubeconfig` 또는 task 전용 환경변수를 사용한다.
+- 대화형 shell에서는 저장소 절대경로의 `scripts/env/activate.sh`를 source하고, 작업 후 `rolloutproof-env-deactivate`로 기존 환경을 복원한다.
 - `kubectl config use-context`로 사용자 global current-context를 바꾸지 않는다.
 - command 시작 시 context, server URL, cluster UID, namespace를 출력한다.
 - context가 허용 prefix와 일치하지 않으면 local mutation test를 중단한다.
