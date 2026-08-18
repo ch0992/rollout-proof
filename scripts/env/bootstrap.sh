@@ -72,7 +72,7 @@ done
 
 printf 'task=ENV-002 mode=%s platform=%s\n' "$([[ "${APPLY}" == "true" ]] && printf apply || printf plan)" "${PLATFORM}"
 printf 'manifest=%s\n' "${MANIFEST}"
-printf 'plan: brew bundle --file %s --no-lock\n' "${BREWFILE}"
+printf 'plan: brew bundle --file %s\n' "${BREWFILE}"
 printf 'plan: mise install go@%s kind@%s kubectl@%s\n' "${GO_VERSION}" "${KIND_VERSION}" "${KUBECTL_VERSION}"
 
 if [[ "${APPLY}" != "true" ]]; then
@@ -80,11 +80,11 @@ if [[ "${APPLY}" != "true" ]]; then
   exit 0
 fi
 
-brew bundle --file "${BREWFILE}" --no-lock
+brew bundle --file "${BREWFILE}"
 command -v mise >/dev/null 2>&1 || fail "mise was not installed by Homebrew"
-mise install "go@${GO_VERSION}" "kind@${KIND_VERSION}" "kubectl@${KUBECTL_VERSION}"
+MISE_TRUSTED_CONFIG_PATHS="${REPO_ROOT}" mise install "go@${GO_VERSION}" "kind@${KIND_VERSION}" "kubectl@${KUBECTL_VERSION}"
 
-mise exec "go@${GO_VERSION}" -- go version
-mise exec "kind@${KIND_VERSION}" -- kind version
-mise exec "kubectl@${KUBECTL_VERSION}" -- kubectl version --client
+MISE_TRUSTED_CONFIG_PATHS="${REPO_ROOT}" mise exec "go@${GO_VERSION}" -- go version
+MISE_TRUSTED_CONFIG_PATHS="${REPO_ROOT}" mise exec "kind@${KIND_VERSION}" -- kind version
+MISE_TRUSTED_CONFIG_PATHS="${REPO_ROOT}" mise exec "kubectl@${KUBECTL_VERSION}" -- kubectl version --client
 printf 'result=APPLIED\n'
