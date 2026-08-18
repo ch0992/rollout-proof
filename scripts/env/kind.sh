@@ -80,7 +80,7 @@ readonly NODE_IMAGE
 
 kind_cmd() {
   if command -v mise >/dev/null 2>&1; then
-    mise exec "kind@${KIND_VERSION}" -- kind "$@"
+    MISE_TRUSTED_CONFIG_PATHS="${REPO_ROOT}" mise exec "kind@${KIND_VERSION}" -- kind "$@"
   elif command -v kind >/dev/null 2>&1; then
     kind "$@"
   else
@@ -91,7 +91,7 @@ kind_cmd() {
 
 kubectl_cmd() {
   if command -v mise >/dev/null 2>&1; then
-    mise exec "kubectl@${KUBECTL_VERSION}" -- kubectl --kubeconfig "${KUBECONFIG_FILE}" "$@"
+    MISE_TRUSTED_CONFIG_PATHS="${REPO_ROOT}" mise exec "kubectl@${KUBECTL_VERSION}" -- kubectl --kubeconfig "${KUBECONFIG_FILE}" "$@"
   elif command -v kubectl >/dev/null 2>&1; then
     kubectl --kubeconfig "${KUBECONFIG_FILE}" "$@"
   else
