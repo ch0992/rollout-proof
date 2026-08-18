@@ -1,7 +1,7 @@
 ---
 task_id: ENV-008
 title: "Local environment acceptance suite와 report"
-status: backlog
+status: ready
 size: M
 milestone: Environment Foundation
 epic: ENV-E1
