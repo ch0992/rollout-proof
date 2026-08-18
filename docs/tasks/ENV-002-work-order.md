@@ -1,7 +1,7 @@
 ---
 task_id: ENV-002
 title: "Tool version manifest와 read-only bootstrap"
-status: backlog
+status: completed
 size: M
 milestone: Environment Foundation
 epic: ENV-E1
