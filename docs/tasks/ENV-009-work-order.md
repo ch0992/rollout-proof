@@ -38,10 +38,10 @@ evaluation_document: ../evaluations/ENV-009-evaluation.md
 
 ## Acceptance Criteria
 
-- [ ] AC-1: 두 번째 apply 변경이 0이다.
-- [ ] AC-2: cleanup opt-in 없이는 삭제하지 않는다.
-- [ ] AC-3: failure injection을 탐지한다.
-- [ ] AC-4: unrelated resource가 보존된다.
+- [x] AC-1: 두 번째 apply 변경이 0이다.
+- [x] AC-2: cleanup opt-in 없이는 삭제하지 않는다.
+- [x] AC-3: failure injection을 탐지한다.
+- [x] AC-4: unrelated resource가 보존된다.
 
 ## 검증
 

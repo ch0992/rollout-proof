@@ -38,10 +38,10 @@ Local environment acceptance suite와 report을 독립적으로 구현하고 후
 
 ## Acceptance Criteria
 
-- [ ] AC-1: mandatory ENV check를 실행한다.
-- [ ] AC-2: READY/FAIL/BLOCKED/INCONCLUSIVE를 구분한다.
-- [ ] AC-3: JSON과 Markdown verdict가 일치한다.
-- [ ] AC-4: secret redaction이 검증된다.
+- [x] AC-1: mandatory ENV check를 실행한다.
+- [x] AC-2: READY/FAIL/BLOCKED/INCONCLUSIVE를 구분한다.
+- [x] AC-3: JSON과 Markdown verdict가 일치한다.
+- [x] AC-4: secret redaction이 검증된다.
 
 ## 검증
 

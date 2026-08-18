@@ -38,10 +38,10 @@ Colima runtime 대체 adapter을 독립적으로 구현하고 후속 환경 Task
 
 ## Acceptance Criteria
 
-- [ ] AC-1: rolloutproof profile만 소유한다.
-- [ ] AC-2: 내장 Kubernetes가 disabled다.
-- [ ] AC-3: 다른 profile을 변경하지 않는다.
-- [ ] AC-4: Docker provider와 같은 interface를 구현한다.
+- [x] AC-1: rolloutproof profile만 소유한다.
+- [x] AC-2: 내장 Kubernetes가 disabled다.
+- [x] AC-3: 다른 profile을 변경하지 않는다.
+- [x] AC-4: Docker provider와 같은 interface를 구현한다.
 
 ## 검증
 

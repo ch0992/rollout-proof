@@ -27,6 +27,7 @@ ENV-001 → ENV-002 → ENV-003 → ENV-004 → ENV-006 → ENV-007 → ENV-008 
 | ENV-008 | [#54](https://github.com/ch0992/rollout-proof/issues/54) | Completed | [작업지시서](./tasks/ENV-008-work-order.md) | [평가서](./evaluations/ENV-008-evaluation.md) |
 | ENV-009 | [#55](https://github.com/ch0992/rollout-proof/issues/55) | Completed | [작업지시서](./tasks/ENV-009-work-order.md) | [평가서](./evaluations/ENV-009-evaluation.md) |
 | ENV-010 | [#56](https://github.com/ch0992/rollout-proof/issues/56) | Completed | [작업지시서](./tasks/ENV-010-work-order.md) | [평가서](./evaluations/ENV-010-evaluation.md) |
+| ENV-011 | [#76](https://github.com/ch0992/rollout-proof/issues/76) | Ready | [작업지시서](./tasks/ENV-011-work-order.md) | [평가서](./evaluations/ENV-011-evaluation.md) |
 
 ## 공통 완료 조건
 

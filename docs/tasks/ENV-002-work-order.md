@@ -39,10 +39,10 @@ Tool version manifest와 read-only bootstrap을 독립적으로 구현하고 후
 
 ## Acceptance Criteria
 
-- [ ] AC-1: 필수 tool/version/checksum source가 한 곳에 정의된다.
-- [ ] AC-2: 기본 bootstrap은 read-only plan이다.
-- [ ] AC-3: APPLY=true 없이는 package를 설치하지 않는다.
-- [ ] AC-4: Apple Silicon과 amd64 선택을 검증한다.
+- [x] AC-1: 필수 tool/version/checksum source가 한 곳에 정의된다.
+- [x] AC-2: 기본 bootstrap은 read-only plan이다.
+- [x] AC-3: APPLY=true 없이는 package를 설치하지 않는다.
+- [x] AC-4: Apple Silicon과 amd64 선택을 검증한다.
 
 ## 검증
 

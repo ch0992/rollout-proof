@@ -42,10 +42,10 @@ evaluation_document: ../evaluations/ENV-001-evaluation.md
 
 ## Acceptance Criteria
 
-- [ ] AC-1: AI 시작·중단·안전 규칙이 명시된다.
-- [ ] AC-2: check/plan/apply/verify/cleanup mode가 분리된다.
-- [ ] AC-3: Docker Desktop/Colima provider interface가 정의된다.
-- [ ] AC-4: Issue, branch, 평가 계약이 연결된다.
+- [x] AC-1: AI 시작·중단·안전 규칙이 명시된다.
+- [x] AC-2: check/plan/apply/verify/cleanup mode가 분리된다.
+- [x] AC-3: Docker Desktop/Colima provider interface가 정의된다.
+- [x] AC-4: Issue, branch, 평가 계약이 연결된다.
 
 ## 검증
 
