@@ -1,7 +1,7 @@
 ---
 task_id: ENV-007
 title: "Kubeconfig, namespace와 artifact 격리"
-status: ready
+status: completed
 size: M
 milestone: Environment Foundation
 epic: ENV-E1
