@@ -6,7 +6,7 @@ issue: https://github.com/ch0992/rollout-proof/issues/47
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/ENV-001-work-order.md
-evaluation_version: 1
+evaluation_version: 2
 verdict: null
 ---
 
@@ -15,7 +15,7 @@ verdict: null
 ## 평가 대상
 
 - Issue: #47
-- 허용 파일: `AGENTS.md`, `docs/environment-automation-spec.md`, `docs/ai-environment-runbook.md`
+- 허용 파일: ENV-001 작업지시서 v2의 `작업 범위`에 열거된 파일
 - evaluated commit은 구현 후 고정한다.
 
 ## Acceptance 검증

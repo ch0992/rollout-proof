@@ -7,7 +7,7 @@ milestone: Environment Foundation
 epic: ENV-E1
 issue: https://github.com/ch0992/rollout-proof/issues/47
 branch: "docs/47-env-001-automation-contract"
-work_order_version: 1
+work_order_version: 2
 evaluation_document: ../evaluations/ENV-001-evaluation.md
 ---
 
@@ -29,6 +29,10 @@ evaluation_document: ../evaluations/ENV-001-evaluation.md
 - `AGENTS.md`
 - `docs/environment-automation-spec.md`
 - `docs/ai-environment-runbook.md`
+- `docs/environment-task-index.md`
+- `docs/tasks/ENV-001-work-order.md`부터 `docs/tasks/ENV-010-work-order.md`
+- `docs/evaluations/ENV-001-evaluation.md`부터 `docs/evaluations/ENV-010-evaluation.md`
+- `docs/README.md`의 환경 자동화 문서 링크
 
 ## 제외 범위
 
