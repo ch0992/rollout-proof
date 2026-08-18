@@ -56,4 +56,3 @@ Container provider adapter와 dev-doctor을 독립적으로 구현하고 후속 
 - Commit prefix: `[ENV-003]`
 - PR은 `Closes #49`와 두 문서 링크를 포함한다.
 - 평가 PASS 전에는 merge하지 않는다.
-

@@ -56,4 +56,3 @@ Digest-pinned kind cluster IaC을 독립적으로 구현하고 후속 환경 Tas
 - Commit prefix: `[ENV-006]`
 - PR은 `Closes #52`와 두 문서 링크를 포함한다.
 - 평가 PASS 전에는 merge하지 않는다.
-

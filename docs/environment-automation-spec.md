@@ -104,4 +104,3 @@ test/environment/
 - kind/kubeconfig/test logic은 provider와 독립적이다.
 - destructive operation은 정확한 target과 opt-in을 요구한다.
 - 환경 report가 exit code와 같은 verdict를 갖는다.
-

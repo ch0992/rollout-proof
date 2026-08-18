@@ -57,4 +57,3 @@ Tool version manifest와 read-only bootstrap을 독립적으로 구현하고 후
 - Commit prefix: `[ENV-002]`
 - PR은 `Closes #48`와 두 문서 링크를 포함한다.
 - 평가 PASS 전에는 merge하지 않는다.
-

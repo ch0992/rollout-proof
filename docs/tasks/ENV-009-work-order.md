@@ -56,4 +56,3 @@ evaluation_document: ../evaluations/ENV-009-evaluation.md
 - Commit prefix: `[ENV-009]`
 - PR은 `Closes #55`와 두 문서 링크를 포함한다.
 - 평가 PASS 전에는 merge하지 않는다.
-

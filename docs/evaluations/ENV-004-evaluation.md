@@ -40,4 +40,3 @@ verdict: null
 ## 판정
 
 필수 항목 하나라도 FAIL이면 전체 FAIL이다. evidence가 부족하면 INCONCLUSIVE이며 merge하지 않는다.
-

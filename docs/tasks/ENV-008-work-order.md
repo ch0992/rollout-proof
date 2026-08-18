@@ -56,4 +56,3 @@ Local environment acceptance suite와 report을 독립적으로 구현하고 후
 - Commit prefix: `[ENV-008]`
 - PR은 `Closes #54`와 두 문서 링크를 포함한다.
 - 평가 PASS 전에는 merge하지 않는다.
-

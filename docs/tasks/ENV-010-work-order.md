@@ -55,4 +55,3 @@ Linux CI kind matrix와 provider portability을 독립적으로 구현하고 후
 - Commit prefix: `[ENV-010]`
 - PR은 `Closes #56`와 두 문서 링크를 포함한다.
 - 평가 PASS 전에는 merge하지 않는다.
-

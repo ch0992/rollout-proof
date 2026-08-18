@@ -55,4 +55,3 @@ Docker Desktop runtime 검증 adapter을 독립적으로 구현하고 후속 환
 - Commit prefix: `[ENV-004]`
 - PR은 `Closes #50`와 두 문서 링크를 포함한다.
 - 평가 PASS 전에는 merge하지 않는다.
-
