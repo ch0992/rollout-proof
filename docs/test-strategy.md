@@ -1,8 +1,8 @@
 # RolloutProof 테스트 전략 및 검증 계획
 
-> 상태: 0.1-draft  
-> 책임: 구현과 호환성 주장을 검증하는 test level, scenario, 환경, 주기, evidence 및 통과 기준 정의  
-> 개발환경: [Mac 로컬 개발 환경](./development-environment.md)  
+> 상태: 0.1-draft
+> 책임: 구현과 호환성 주장을 검증하는 test level, scenario, 환경, 주기, evidence 및 통과 기준 정의
+> 개발환경: [Mac 로컬 개발 환경](./development-environment.md)
 > 지원 정책: [Kubernetes Cluster 호환성](./cluster-compatibility.md)
 > 제품 test 이전 환경 acceptance: [로컬 개발 인프라 검증 계약](./local-environment-validation.md)
 

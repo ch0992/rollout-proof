@@ -1,8 +1,8 @@
 # RolloutProof 로컬 개발 환경
 
-> 상태: 0.1-draft  
-> 기준 host: macOS MacBook  
-> 관련 Issue: [#43](https://github.com/ch0992/rollout-proof/issues/43)  
+> 상태: 0.1-draft
+> 기준 host: macOS MacBook
+> 관련 Issue: [#43](https://github.com/ch0992/rollout-proof/issues/43)
 > 호환성 계약: [Kubernetes Cluster 호환성](./cluster-compatibility.md)
 > 테스트 계획: [테스트 전략 및 검증 계획](./test-strategy.md)
 > 구축 후 검증: [로컬 개발 인프라 검증 계약](./local-environment-validation.md)
@@ -134,6 +134,16 @@ nodes:
 ```
 
 지원 minor의 최신 patch와 digest는 `test/e2e/kind/versions.yaml` 한 곳에서 관리한다. tag만 사용하지 않는다. minor patch 갱신은 compatibility matrix 전체를 통과해야 한다.
+
+필수 version manifest entry:
+
+| Kubernetes minor | Node image 계약 |
+|---|---|
+| 1.34 | `kindest/node:v1.34.x@sha256:<digest>` |
+| 1.35 | `kindest/node:v1.35.x@sha256:<digest>` |
+| 1.36 | `kindest/node:v1.36.x@sha256:<digest>` |
+
+실제 patch와 digest는 upstream kind release 확인 후 manifest에 고정한다. `<digest>` placeholder가 남아 있으면 static environment validation은 FAIL이다.
 
 ## 7. Kubeconfig 격리
 

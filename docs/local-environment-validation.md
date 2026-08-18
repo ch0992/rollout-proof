@@ -316,4 +316,3 @@ AI는 FAIL을 자동으로 숨기거나 destructive reset으로 해결하지 않
 6. cleanup opt-in test를 release 전 최소 1회 PASS
 7. Apple Silicon Colima 경로 PASS
 8. Docker Desktop 대체 경로는 별도 evidence 상태로 기록
-
