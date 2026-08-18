@@ -1,0 +1,61 @@
+name: Environment portability
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/environment.yml"
+      - "infra/local/kind/**"
+      - "test/environment/**"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/environment.yml"
+      - "infra/local/kind/**"
+      - "test/environment/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  kind-matrix:
+    name: Kubernetes ${{ matrix.kubernetes }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        kubernetes: ["1.34", "1.35", "1.36"]
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install kind and kubectl
+        env:
+          KIND_VERSION: v0.32.0
+          KUBECTL_VERSION: v1.36.3
+        run: |
+          curl -fsSLO "https://kind.sigs.k8s.io/dl/${KIND_VERSION}/kind-linux-amd64"
+          curl -fsSLo kind.sha256 "https://kind.sigs.k8s.io/dl/${KIND_VERSION}/kind-linux-amd64.sha256sum"
+          sha256sum --check kind.sha256
+          sudo install -m 0755 kind-linux-amd64 /usr/local/bin/kind
+          curl -fsSLo kubectl "https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl"
+          curl -fsSLo kubectl.sha256 "https://dl.k8s.io/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl.sha256"
+          echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+          sudo install -m 0755 kubectl /usr/local/bin/kubectl
+
+      - name: Run common kind IaC
+        run: test/environment/ci.sh run --minor "${{ matrix.kubernetes }}"
+
+      - name: Preserve report and checksums
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: environment-kubernetes-${{ matrix.kubernetes }}
+          path: .work/artifacts/environment/ci-${{ matrix.kubernetes }}/
+          if-no-files-found: error
+
+      - name: Clean up exact CI cluster
+        if: always()
+        env:
+          ALLOW_DELETE: "true"
+        run: test/environment/ci.sh cleanup --minor "${{ matrix.kubernetes }}"
