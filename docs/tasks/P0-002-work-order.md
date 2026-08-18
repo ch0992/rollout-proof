@@ -1,12 +1,12 @@
 ---
 task_id: P0-002
 title: "개발 기본 Make target 정의"
-status: draft
+status: backlog
 size: XS
 milestone: Phase 0
 epic: P0-E1
-issue: null
-branch: "feat/<issue-number>-p0-002-make-targets"
+issue: https://github.com/ch0992/rollout-proof/issues/8
+branch: "feat/8-p0-002-make-targets"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-002-evaluation.md
 ---
@@ -86,10 +86,10 @@ make test-race lint
 ## 12. 형상관리 계약
 
 - Issue: 생성 후 front matter에 기록
-- Branch: `feat/<issue-number>-p0-002-make-targets`
+- Branch: `feat/8-p0-002-make-targets`
 - Commit prefix: `[P0-002]`
 - PR title: `[P0-002] 개발 기본 Make target 정의`
-- PR 본문: `Closes #<issue-number>`와 작업지시서/평가서 링크
+- PR 본문: `Closes #8`와 작업지시서/평가서 링크
 - merge 조건: 평가서 PASS와 required CI PASS
 
 ## 13. 완료 보고 형식

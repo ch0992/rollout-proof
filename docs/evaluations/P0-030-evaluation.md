@@ -2,7 +2,7 @@
 task_id: P0-030
 title: "Observe prototype command wiring"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/36
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-030-work-order.md

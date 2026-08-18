@@ -1,12 +1,12 @@
 ---
 task_id: P0-031
 title: "Kind cluster bootstrap"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E6
-issue: null
-branch: "feat/<issue-number>-p0-031-kind-bootstrap"
+issue: https://github.com/ch0992/rollout-proof/issues/37
+branch: "chore/37-p0-031-kind-bootstrap"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-031-evaluation.md
 ---
@@ -76,10 +76,10 @@ make -C test/e2e/kind delete
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-031-kind-bootstrap`
+- Branch: `chore/37-p0-031-kind-bootstrap`
 - Commit prefix: `[P0-031]`
 - PR title: `[P0-031] Kind cluster bootstrap`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #37` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

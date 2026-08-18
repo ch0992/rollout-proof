@@ -1,12 +1,12 @@
 ---
 task_id: P0-018
 title: "ADR-0004 LIST/WATCH supervisor 결정"
-status: draft
+status: backlog
 size: XS
 milestone: Phase 0
 epic: P0-E3
-issue: null
-branch: "feat/<issue-number>-p0-018-adr-watch"
+issue: https://github.com/ch0992/rollout-proof/issues/24
+branch: "docs/24-p0-018-adr-watch"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-018-evaluation.md
 ---
@@ -74,10 +74,10 @@ rg -n 'Context|Decision|Alternatives|Consequences|410' docs/adr/0004-list-watch-
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-018-adr-watch`
+- Branch: `docs/24-p0-018-adr-watch`
 - Commit prefix: `[P0-018]`
 - PR title: `[P0-018] ADR-0004 LIST/WATCH supervisor 결정`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #24` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

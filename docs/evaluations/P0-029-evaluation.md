@@ -2,7 +2,7 @@
 task_id: P0-029
 title: "최소 JSON report renderer"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/35
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-029-work-order.md

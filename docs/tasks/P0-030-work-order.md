@@ -1,12 +1,12 @@
 ---
 task_id: P0-030
 title: "Observe prototype command wiring"
-status: draft
+status: backlog
 size: M
 milestone: Phase 0
 epic: P0-E5
-issue: null
-branch: "feat/<issue-number>-p0-030-observe-prototype"
+issue: https://github.com/ch0992/rollout-proof/issues/36
+branch: "feat/36-p0-030-observe-prototype"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-030-evaluation.md
 ---
@@ -78,10 +78,10 @@ go test -race ./internal/app/observe
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-030-observe-prototype`
+- Branch: `feat/36-p0-030-observe-prototype`
 - Commit prefix: `[P0-030]`
 - PR title: `[P0-030] Observe prototype command wiring`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #36` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

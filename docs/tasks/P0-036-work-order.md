@@ -1,12 +1,12 @@
 ---
 task_id: P0-036
 title: "Phase 0 결과와 Go/No-Go ADR"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E6
-issue: null
-branch: "feat/<issue-number>-p0-036-phase0-decision"
+issue: https://github.com/ch0992/rollout-proof/issues/42
+branch: "docs/42-p0-036-phase0-decision"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-036-evaluation.md
 ---
@@ -78,10 +78,10 @@ rg -n 'PASS|FAIL|INCONCLUSIVE|Go|No-Go' docs/adr/0009-phase-0-go-no-go.md
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-036-phase0-decision`
+- Branch: `docs/42-p0-036-phase0-decision`
 - Commit prefix: `[P0-036]`
 - PR title: `[P0-036] Phase 0 결과와 Go/No-Go ADR`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #42` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

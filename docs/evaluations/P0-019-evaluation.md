@@ -2,7 +2,7 @@
 task_id: P0-019
 title: "HTTP Probe domain type"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/25
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-019-work-order.md

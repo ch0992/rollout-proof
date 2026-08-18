@@ -1,12 +1,12 @@
 ---
 task_id: P0-017
 title: "EndpointSlice watch adapter"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E3
-issue: null
-branch: "feat/<issue-number>-p0-017-endpointslice-adapter"
+issue: https://github.com/ch0992/rollout-proof/issues/23
+branch: "feat/23-p0-017-endpointslice-adapter"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-017-evaluation.md
 ---
@@ -74,10 +74,10 @@ go vet ./internal/kube/watch
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-017-endpointslice-adapter`
+- Branch: `feat/23-p0-017-endpointslice-adapter`
 - Commit prefix: `[P0-017]`
 - PR title: `[P0-017] EndpointSlice watch adapter`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #23` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

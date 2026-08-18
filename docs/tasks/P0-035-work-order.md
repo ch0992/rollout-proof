@@ -1,12 +1,12 @@
 ---
 task_id: P0-035
 title: "10회 반복 재현 harness"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E6
-issue: null
-branch: "feat/<issue-number>-p0-035-repeat-harness"
+issue: https://github.com/ch0992/rollout-proof/issues/41
+branch: "feat/41-p0-035-repeat-harness"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-035-evaluation.md
 ---
@@ -76,10 +76,10 @@ test/e2e/repeat.sh --scenario endpoint-gap --count 10
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-035-repeat-harness`
+- Branch: `feat/41-p0-035-repeat-harness`
 - Commit prefix: `[P0-035]`
 - PR title: `[P0-035] 10회 반복 재현 harness`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #41` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

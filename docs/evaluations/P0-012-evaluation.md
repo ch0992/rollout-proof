@@ -2,7 +2,7 @@
 task_id: P0-012
 title: "Deployment selector discovery"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/18
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-012-work-order.md

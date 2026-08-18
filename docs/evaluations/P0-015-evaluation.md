@@ -2,7 +2,7 @@
 task_id: P0-015
 title: "410 Gone relist와 watch gap"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/21
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-015-work-order.md

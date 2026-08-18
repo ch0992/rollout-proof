@@ -2,7 +2,7 @@
 task_id: P0-005
 title: "ADR-0002 Go 단일 프로세스 결정 기록"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/11
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-005-work-order.md

@@ -2,7 +2,7 @@
 task_id: P0-031
 title: "Kind cluster bootstrap"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/37
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-031-work-order.md

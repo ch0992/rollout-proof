@@ -1,12 +1,12 @@
 ---
 task_id: P0-014
 title: "WATCH EOF reconnect와 backoff"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E3
-issue: null
-branch: "feat/<issue-number>-p0-014-watch-reconnect"
+issue: https://github.com/ch0992/rollout-proof/issues/20
+branch: "feat/20-p0-014-watch-reconnect"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-014-evaluation.md
 ---
@@ -75,10 +75,10 @@ go test -race ./internal/kube/watch
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-014-watch-reconnect`
+- Branch: `feat/20-p0-014-watch-reconnect`
 - Commit prefix: `[P0-014]`
 - PR title: `[P0-014] WATCH EOF reconnect와 backoff`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #20` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

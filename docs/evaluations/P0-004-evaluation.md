@@ -2,7 +2,7 @@
 task_id: P0-004
 title: "CI unit/build workflow 생성"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/10
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-004-work-order.md

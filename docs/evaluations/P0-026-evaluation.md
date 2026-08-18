@@ -2,7 +2,7 @@
 task_id: P0-026
 title: "Watch와 Probe producer를 Event bus에 연결"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/32
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-026-work-order.md

@@ -2,7 +2,7 @@
 task_id: P0-006
 title: "Event domain type 정의"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/12
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-006-work-order.md

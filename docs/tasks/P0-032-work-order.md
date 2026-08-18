@@ -1,12 +1,12 @@
 ---
 task_id: P0-032
 title: "정상 Rollout fixture"
-status: draft
+status: backlog
 size: M
 milestone: Phase 0
 epic: P0-E6
-issue: null
-branch: "feat/<issue-number>-p0-032-normal-fixture"
+issue: https://github.com/ch0992/rollout-proof/issues/38
+branch: "feat/38-p0-032-normal-fixture"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-032-evaluation.md
 ---
@@ -78,10 +78,10 @@ kubectl rollout status deployment/rolloutproof-normal --timeout=120s
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-032-normal-fixture`
+- Branch: `feat/38-p0-032-normal-fixture`
 - Commit prefix: `[P0-032]`
 - PR title: `[P0-032] 정상 Rollout fixture`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #38` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

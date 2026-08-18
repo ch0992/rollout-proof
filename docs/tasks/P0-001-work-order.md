@@ -1,12 +1,12 @@
 ---
 task_id: P0-001
 title: "Go module과 CLI entrypoint 생성"
-status: draft
+status: ready
 size: XS
 milestone: Phase 0
 epic: P0-E1
-issue: null
-branch: "feat/<issue-number>-p0-001-go-module-entrypoint"
+issue: https://github.com/ch0992/rollout-proof/issues/7
+branch: "feat/7-p0-001-go-module-entrypoint"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-001-evaluation.md
 ---
@@ -19,7 +19,7 @@ Go module과 CLI entrypoint 생성을 독립적으로 구현하고 후속 Task�
 
 ## 2. 선행조건
 
-- GitHub repository owner와 Go module path가 확정되어야 한다.
+- GitHub repository owner와 Go module path는 `ch0992`, `github.com/ch0992/rollout-proof`로 확정됐다.
 - 작업 시작 시 Issue URL과 base commit을 front matter에 기록한다.
 
 ## 3. 참조 계약
@@ -53,7 +53,7 @@ Go module과 CLI entrypoint 생성을 독립적으로 구현하고 후속 Task�
 
 ## 7. 구현 계약
 
-module path는 GitHub owner 확정 후 `github.com/<owner>/rollout-proof`를 사용한다. main은 package logic을 포함하지 않으며 이후 root command를 호출할 wiring 위치만 제공한다.
+module path는 `github.com/ch0992/rollout-proof`를 사용한다. main은 package logic을 포함하지 않으며 이후 root command를 호출할 wiring 위치만 제공한다.
 
 ## 8. Acceptance Criteria
 
@@ -88,10 +88,10 @@ go build ./cmd/rollout-proof
 ## 12. 형상관리 계약
 
 - Issue: 생성 후 front matter에 기록
-- Branch: `feat/<issue-number>-p0-001-go-module-entrypoint`
+- Branch: `feat/7-p0-001-go-module-entrypoint`
 - Commit prefix: `[P0-001]`
 - PR title: `[P0-001] Go module과 CLI entrypoint 생성`
-- PR 본문: `Closes #<issue-number>`와 작업지시서/평가서 링크
+- PR 본문: `Closes #7`와 작업지시서/평가서 링크
 - merge 조건: 평가서 PASS와 required CI PASS
 
 ## 13. 완료 보고 형식
@@ -104,4 +104,3 @@ Acceptance evidence:
 Known limitations:
 Commit SHA:
 ```
-

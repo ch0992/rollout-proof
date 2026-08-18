@@ -1,12 +1,12 @@
 ---
 task_id: P0-009
 title: "v1alpha1 최소 Report DTO 정의"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E2
-issue: null
-branch: "feat/<issue-number>-p0-009-report-v1alpha1"
+issue: https://github.com/ch0992/rollout-proof/issues/15
+branch: "feat/15-p0-009-report-v1alpha1"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-009-evaluation.md
 ---
@@ -91,10 +91,10 @@ rg -n 'rollout-proof\.io' internal/report/v1alpha1
 ## 12. 형상관리 계약
 
 - Issue: 생성 후 front matter에 기록
-- Branch: `feat/<issue-number>-p0-009-report-v1alpha1`
+- Branch: `feat/15-p0-009-report-v1alpha1`
 - Commit prefix: `[P0-009]`
 - PR title: `[P0-009] v1alpha1 최소 Report DTO 정의`
-- PR 본문: `Closes #<issue-number>`와 작업지시서/평가서 링크
+- PR 본문: `Closes #15`와 작업지시서/평가서 링크
 - merge 조건: 평가서 PASS와 required CI PASS
 
 ## 13. 완료 보고 형식

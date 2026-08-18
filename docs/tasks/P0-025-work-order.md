@@ -1,12 +1,12 @@
 ---
 task_id: P0-025
 title: "ADR-0006 HTTP connection profile 결정"
-status: draft
+status: backlog
 size: XS
 milestone: Phase 0
 epic: P0-E4
-issue: null
-branch: "feat/<issue-number>-p0-025-adr-http-profile"
+issue: https://github.com/ch0992/rollout-proof/issues/31
+branch: "docs/31-p0-025-adr-http-profile"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-025-evaluation.md
 ---
@@ -74,10 +74,10 @@ rg -n 'net/http|httptrace|Keep-Alive|HTTP/2' docs/adr/0006-http-connection-profi
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-025-adr-http-profile`
+- Branch: `docs/31-p0-025-adr-http-profile`
 - Commit prefix: `[P0-025]`
 - PR title: `[P0-025] ADR-0006 HTTP connection profile 결정`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #31` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

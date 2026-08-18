@@ -2,7 +2,7 @@
 task_id: P0-008
 title: "단일 Event sequencer 구현"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/14
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-008-work-order.md

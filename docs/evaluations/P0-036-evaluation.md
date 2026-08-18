@@ -2,7 +2,7 @@
 task_id: P0-036
 title: "Phase 0 결과와 Go/No-Go ADR"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/42
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-036-work-order.md

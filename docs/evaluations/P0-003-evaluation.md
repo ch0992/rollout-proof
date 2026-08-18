@@ -2,7 +2,7 @@
 task_id: P0-003
 title: "Cobra root command와 출력 channel 분리"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/9
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-003-work-order.md

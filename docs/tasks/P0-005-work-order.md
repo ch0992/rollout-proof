@@ -1,12 +1,12 @@
 ---
 task_id: P0-005
 title: "ADR-0002 Go 단일 프로세스 결정 기록"
-status: draft
+status: backlog
 size: XS
 milestone: Phase 0
 epic: P0-E1
-issue: null
-branch: "feat/<issue-number>-p0-005-adr-single-process"
+issue: https://github.com/ch0992/rollout-proof/issues/11
+branch: "docs/11-p0-005-adr-single-process"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-005-evaluation.md
 ---
@@ -86,10 +86,10 @@ rg -n '0002-single-process-cli' docs/README.md
 ## 12. 형상관리 계약
 
 - Issue: 생성 후 front matter에 기록
-- Branch: `feat/<issue-number>-p0-005-adr-single-process`
+- Branch: `docs/11-p0-005-adr-single-process`
 - Commit prefix: `[P0-005]`
 - PR title: `[P0-005] ADR-0002 Go 단일 프로세스 결정 기록`
-- PR 본문: `Closes #<issue-number>`와 작업지시서/평가서 링크
+- PR 본문: `Closes #11`와 작업지시서/평가서 링크
 - merge 조건: 평가서 PASS와 required CI PASS
 
 ## 13. 완료 보고 형식

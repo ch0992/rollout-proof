@@ -1,12 +1,12 @@
 ---
 task_id: P0-008
 title: "단일 Event sequencer 구현"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E2
-issue: null
-branch: "feat/<issue-number>-p0-008-event-sequencer"
+issue: https://github.com/ch0992/rollout-proof/issues/14
+branch: "feat/14-p0-008-event-sequencer"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-008-evaluation.md
 ---
@@ -87,10 +87,10 @@ go test -race ./internal/timeline
 ## 12. 형상관리 계약
 
 - Issue: 생성 후 front matter에 기록
-- Branch: `feat/<issue-number>-p0-008-event-sequencer`
+- Branch: `feat/14-p0-008-event-sequencer`
 - Commit prefix: `[P0-008]`
 - PR title: `[P0-008] 단일 Event sequencer 구현`
-- PR 본문: `Closes #<issue-number>`와 작업지시서/평가서 링크
+- PR 본문: `Closes #14`와 작업지시서/평가서 링크
 - merge 조건: 평가서 PASS와 required CI PASS
 
 ## 13. 완료 보고 형식

@@ -1,12 +1,12 @@
 ---
 task_id: P0-015
 title: "410 Gone relist와 watch gap"
-status: draft
+status: backlog
 size: M
 milestone: Phase 0
 epic: P0-E3
-issue: null
-branch: "feat/<issue-number>-p0-015-watch-relist-gap"
+issue: https://github.com/ch0992/rollout-proof/issues/21
+branch: "feat/21-p0-015-watch-relist-gap"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-015-evaluation.md
 ---
@@ -77,10 +77,10 @@ go test -race ./internal/kube/watch
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-015-watch-relist-gap`
+- Branch: `feat/21-p0-015-watch-relist-gap`
 - Commit prefix: `[P0-015]`
 - PR title: `[P0-015] 410 Gone relist와 watch gap`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #21` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

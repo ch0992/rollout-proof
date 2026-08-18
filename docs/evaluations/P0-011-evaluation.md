@@ -2,7 +2,7 @@
 task_id: P0-011
 title: "Kubeconfig와 REST config loader"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/17
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-011-work-order.md

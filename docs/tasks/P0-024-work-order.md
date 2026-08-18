@@ -1,12 +1,12 @@
 ---
 task_id: P0-024
 title: "HTTP status policy"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E4
-issue: null
-branch: "feat/<issue-number>-p0-024-status-policy"
+issue: https://github.com/ch0992/rollout-proof/issues/30
+branch: "feat/30-p0-024-status-policy"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-024-evaluation.md
 ---
@@ -74,10 +74,10 @@ go vet ./internal/probe/policy
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-024-status-policy`
+- Branch: `feat/30-p0-024-status-policy`
 - Commit prefix: `[P0-024]`
 - PR title: `[P0-024] HTTP status policy`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #30` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

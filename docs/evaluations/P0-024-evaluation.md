@@ -2,7 +2,7 @@
 task_id: P0-024
 title: "HTTP status policy"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/30
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-024-work-order.md

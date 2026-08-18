@@ -2,7 +2,7 @@
 task_id: P0-034
 title: "실제 cluster Observe E2E"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/40
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-034-work-order.md

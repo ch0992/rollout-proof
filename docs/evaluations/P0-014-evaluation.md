@@ -2,7 +2,7 @@
 task_id: P0-014
 title: "WATCH EOF reconnect와 backoff"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/20
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-014-work-order.md

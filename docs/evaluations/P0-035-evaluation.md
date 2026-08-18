@@ -2,7 +2,7 @@
 task_id: P0-035
 title: "10회 반복 재현 harness"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/41
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-035-work-order.md

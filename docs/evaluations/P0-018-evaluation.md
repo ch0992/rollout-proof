@@ -2,7 +2,7 @@
 task_id: P0-018
 title: "ADR-0004 LIST/WATCH supervisor 결정"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/24
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-018-work-order.md

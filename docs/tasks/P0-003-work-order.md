@@ -1,12 +1,12 @@
 ---
 task_id: P0-003
 title: "Cobra root command와 출력 channel 분리"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E1
-issue: null
-branch: "feat/<issue-number>-p0-003-cobra-root"
+issue: https://github.com/ch0992/rollout-proof/issues/9
+branch: "feat/9-p0-003-cobra-root"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-003-evaluation.md
 ---
@@ -89,10 +89,10 @@ go run ./cmd/rollout-proof unknown-command
 ## 12. 형상관리 계약
 
 - Issue: 생성 후 front matter에 기록
-- Branch: `feat/<issue-number>-p0-003-cobra-root`
+- Branch: `feat/9-p0-003-cobra-root`
 - Commit prefix: `[P0-003]`
 - PR title: `[P0-003] Cobra root command와 출력 channel 분리`
-- PR 본문: `Closes #<issue-number>`와 작업지시서/평가서 링크
+- PR 본문: `Closes #9`와 작업지시서/평가서 링크
 - merge 조건: 평가서 PASS와 required CI PASS
 
 ## 13. 완료 보고 형식

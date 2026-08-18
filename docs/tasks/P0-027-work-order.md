@@ -1,12 +1,12 @@
 ---
 task_id: P0-027
 title: "Canonical timeline ordering"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E5
-issue: null
-branch: "feat/<issue-number>-p0-027-canonical-order"
+issue: https://github.com/ch0992/rollout-proof/issues/33
+branch: "feat/33-p0-027-canonical-order"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-027-evaluation.md
 ---
@@ -76,10 +76,10 @@ go test -race ./internal/timeline
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-027-canonical-order`
+- Branch: `feat/33-p0-027-canonical-order`
 - Commit prefix: `[P0-027]`
 - PR title: `[P0-027] Canonical timeline ordering`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #33` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

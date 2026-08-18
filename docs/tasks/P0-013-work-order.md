@@ -1,12 +1,12 @@
 ---
 task_id: P0-013
 title: "Generic LIST/WATCH supervisor"
-status: draft
+status: backlog
 size: M
 milestone: Phase 0
 epic: P0-E3
-issue: null
-branch: "feat/<issue-number>-p0-013-watch-supervisor"
+issue: https://github.com/ch0992/rollout-proof/issues/19
+branch: "feat/19-p0-013-watch-supervisor"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-013-evaluation.md
 ---
@@ -78,10 +78,10 @@ go test -race ./internal/kube/watch
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-013-watch-supervisor`
+- Branch: `feat/19-p0-013-watch-supervisor`
 - Commit prefix: `[P0-013]`
 - PR title: `[P0-013] Generic LIST/WATCH supervisor`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #19` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

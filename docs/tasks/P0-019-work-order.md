@@ -1,12 +1,12 @@
 ---
 task_id: P0-019
 title: "HTTP Probe domain type"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E4
-issue: null
-branch: "feat/<issue-number>-p0-019-probe-types"
+issue: https://github.com/ch0992/rollout-proof/issues/25
+branch: "feat/25-p0-019-probe-types"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-019-evaluation.md
 ---
@@ -74,10 +74,10 @@ go vet ./internal/probe
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-019-probe-types`
+- Branch: `feat/25-p0-019-probe-types`
 - Commit prefix: `[P0-019]`
 - PR title: `[P0-019] HTTP Probe domain type`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #25` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

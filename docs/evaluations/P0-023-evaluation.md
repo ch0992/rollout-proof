@@ -2,7 +2,7 @@
 task_id: P0-023
 title: "HTTP 단계별 오류 classifier"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/29
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-023-work-order.md

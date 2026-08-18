@@ -2,7 +2,7 @@
 task_id: P0-007
 title: "Real/Fake clock과 elapsed time 구현"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/13
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-007-work-order.md

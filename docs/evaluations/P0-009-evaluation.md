@@ -2,7 +2,7 @@
 task_id: P0-009
 title: "v1alpha1 최소 Report DTO 정의"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/15
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-009-work-order.md

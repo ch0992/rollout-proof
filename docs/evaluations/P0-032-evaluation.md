@@ -2,7 +2,7 @@
 task_id: P0-032
 title: "정상 Rollout fixture"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/38
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-032-work-order.md

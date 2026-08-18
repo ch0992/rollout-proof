@@ -1,12 +1,12 @@
 ---
 task_id: P0-028
 title: "최소 Terminal timeline renderer"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E5
-issue: null
-branch: "feat/<issue-number>-p0-028-terminal-renderer"
+issue: https://github.com/ch0992/rollout-proof/issues/34
+branch: "feat/34-p0-028-terminal-renderer"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-028-evaluation.md
 ---
@@ -74,10 +74,10 @@ go test ./internal/report/terminal -run TestSnapshot
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-028-terminal-renderer`
+- Branch: `feat/34-p0-028-terminal-renderer`
 - Commit prefix: `[P0-028]`
 - PR title: `[P0-028] 최소 Terminal timeline renderer`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #34` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

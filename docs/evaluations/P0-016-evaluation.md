@@ -2,7 +2,7 @@
 task_id: P0-016
 title: "Pod lifecycle watch adapter"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/22
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-016-work-order.md

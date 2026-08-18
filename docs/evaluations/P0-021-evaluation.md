@@ -2,7 +2,7 @@
 task_id: P0-021
 title: "New-connection HTTP transport"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/27
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-021-work-order.md

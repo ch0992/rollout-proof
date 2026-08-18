@@ -2,7 +2,7 @@
 task_id: P0-013
 title: "Generic LIST/WATCH supervisor"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/19
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-013-work-order.md

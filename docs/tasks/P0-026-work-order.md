@@ -1,12 +1,12 @@
 ---
 task_id: P0-026
 title: "Watch와 Probe producer를 Event bus에 연결"
-status: draft
+status: backlog
 size: M
 milestone: Phase 0
 epic: P0-E5
-issue: null
-branch: "feat/<issue-number>-p0-026-event-bus-wiring"
+issue: https://github.com/ch0992/rollout-proof/issues/32
+branch: "feat/32-p0-026-event-bus-wiring"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-026-evaluation.md
 ---
@@ -76,10 +76,10 @@ go test -race ./internal/app/observe ./internal/timeline
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-026-event-bus-wiring`
+- Branch: `feat/32-p0-026-event-bus-wiring`
 - Commit prefix: `[P0-026]`
 - PR title: `[P0-026] Watch와 Probe producer를 Event bus에 연결`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #32` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

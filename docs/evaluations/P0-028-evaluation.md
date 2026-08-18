@@ -2,7 +2,7 @@
 task_id: P0-028
 title: "최소 Terminal timeline renderer"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/34
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-028-work-order.md

@@ -2,7 +2,7 @@
 task_id: P0-001
 title: "Go module과 CLI entrypoint 생성"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/7
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-001-work-order.md

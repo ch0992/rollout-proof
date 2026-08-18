@@ -1,12 +1,12 @@
 ---
 task_id: P0-010
 title: "Atomic report writer 구현"
-status: draft
+status: backlog
 size: XS
 milestone: Phase 0
 epic: P0-E2
-issue: null
-branch: "feat/<issue-number>-p0-010-atomic-report-writer"
+issue: https://github.com/ch0992/rollout-proof/issues/16
+branch: "feat/16-p0-010-atomic-report-writer"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-010-evaluation.md
 ---
@@ -85,10 +85,10 @@ go test -race ./internal/report
 ## 12. 형상관리 계약
 
 - Issue: 생성 후 front matter에 기록
-- Branch: `feat/<issue-number>-p0-010-atomic-report-writer`
+- Branch: `feat/16-p0-010-atomic-report-writer`
 - Commit prefix: `[P0-010]`
 - PR title: `[P0-010] Atomic report writer 구현`
-- PR 본문: `Closes #<issue-number>`와 작업지시서/평가서 링크
+- PR 본문: `Closes #16`와 작업지시서/평가서 링크
 - merge 조건: 평가서 PASS와 required CI PASS
 
 ## 13. 완료 보고 형식

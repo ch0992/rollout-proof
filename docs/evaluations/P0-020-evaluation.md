@@ -2,7 +2,7 @@
 task_id: P0-020
 title: "Bounded probe scheduler"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/26
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-020-work-order.md

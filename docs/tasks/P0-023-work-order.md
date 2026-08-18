@@ -1,12 +1,12 @@
 ---
 task_id: P0-023
 title: "HTTP 단계별 오류 classifier"
-status: draft
+status: backlog
 size: M
 milestone: Phase 0
 epic: P0-E4
-issue: null
-branch: "feat/<issue-number>-p0-023-error-classifier"
+issue: https://github.com/ch0992/rollout-proof/issues/29
+branch: "feat/29-p0-023-error-classifier"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-023-evaluation.md
 ---
@@ -76,10 +76,10 @@ go test -race ./internal/probe/classify
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-023-error-classifier`
+- Branch: `feat/29-p0-023-error-classifier`
 - Commit prefix: `[P0-023]`
 - PR title: `[P0-023] HTTP 단계별 오류 classifier`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #29` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

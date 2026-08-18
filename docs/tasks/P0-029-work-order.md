@@ -1,12 +1,12 @@
 ---
 task_id: P0-029
 title: "최소 JSON report renderer"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E5
-issue: null
-branch: "feat/<issue-number>-p0-029-json-renderer"
+issue: https://github.com/ch0992/rollout-proof/issues/35
+branch: "feat/35-p0-029-json-renderer"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-029-evaluation.md
 ---
@@ -74,10 +74,10 @@ go test ./internal/report/json -run TestGolden
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-029-json-renderer`
+- Branch: `feat/35-p0-029-json-renderer`
 - Commit prefix: `[P0-029]`
 - PR title: `[P0-029] 최소 JSON report renderer`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #35` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

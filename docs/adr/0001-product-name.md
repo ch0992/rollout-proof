@@ -21,7 +21,7 @@
 | container repository | `rollout-proof` |
 | 문서 내 일반 표기 | `RolloutProof` |
 
-Go module은 GitHub owner가 확정된 후 `github.com/<owner>/rollout-proof`로 정한다. container image는 같은 owner를 사용해 `ghcr.io/<owner>/rollout-proof`로 정한다.
+GitHub owner는 `ch0992`로 확정한다. Go module은 `github.com/ch0992/rollout-proof`, container image는 `ghcr.io/ch0992/rollout-proof`를 사용한다.
 
 ## API identifier 보류
 
@@ -29,15 +29,13 @@ Kubernetes annotation prefix와 공개 config/report API group은 소유한 DNS 
 
 다음 순서로 별도 ADR에서 결정한다.
 
-1. GitHub owner를 확정한다.
-2. 제품 domain의 확보 가능성과 소유권을 확인한다.
-3. annotation prefix, config `apiVersion`, report `schemaVersion`을 함께 확정한다.
-4. 공개 release 전에 provisional identifier를 일괄 교체한다.
+1. 제품 domain의 확보 가능성과 소유권을 확인한다.
+2. annotation prefix, config `apiVersion`, report `schemaVersion`을 함께 확정한다.
+3. 공개 release 전에 provisional identifier를 일괄 교체한다.
 
 ## Consequences
 
 - Issue, branch, commit 및 PR에서 `RolloutProof`/`rollout-proof`를 일관되게 사용할 수 있다.
 - 제품 범위가 향후 Deployment 외 rollout으로 확장되어도 이름을 유지할 수 있다.
-- API identifier는 GitHub repository 생성 전에 최종 확정할 수 없으며 별도 blocking decision으로 관리한다.
+- API identifier는 제품 domain 소유권 확인 전까지 별도 blocking decision으로 관리한다.
 - 상표권과 domain 확보 여부는 공개 release 전 별도 확인이 필요하다.
-

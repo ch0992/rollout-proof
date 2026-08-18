@@ -1,12 +1,12 @@
 ---
 task_id: P0-004
 title: "CI unit/build workflow 생성"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E1
-issue: null
-branch: "feat/<issue-number>-p0-004-ci-unit-build"
+issue: https://github.com/ch0992/rollout-proof/issues/10
+branch: "chore/10-p0-004-ci-unit-build"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-004-evaluation.md
 ---
@@ -87,10 +87,10 @@ go build ./cmd/rollout-proof
 ## 12. 형상관리 계약
 
 - Issue: 생성 후 front matter에 기록
-- Branch: `feat/<issue-number>-p0-004-ci-unit-build`
+- Branch: `chore/10-p0-004-ci-unit-build`
 - Commit prefix: `[P0-004]`
 - PR title: `[P0-004] CI unit/build workflow 생성`
-- PR 본문: `Closes #<issue-number>`와 작업지시서/평가서 링크
+- PR 본문: `Closes #10`와 작업지시서/평가서 링크
 - merge 조건: 평가서 PASS와 required CI PASS
 
 ## 13. 완료 보고 형식

@@ -2,7 +2,7 @@
 task_id: P0-010
 title: "Atomic report writer 구현"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/16
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-010-work-order.md

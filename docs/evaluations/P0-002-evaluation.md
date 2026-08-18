@@ -2,7 +2,7 @@
 task_id: P0-002
 title: "개발 기본 Make target 정의"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/8
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-002-work-order.md

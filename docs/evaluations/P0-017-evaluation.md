@@ -2,7 +2,7 @@
 task_id: P0-017
 title: "EndpointSlice watch adapter"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/23
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-017-work-order.md

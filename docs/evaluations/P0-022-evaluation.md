@@ -2,7 +2,7 @@
 task_id: P0-022
 title: "Keep-alive HTTP transport"
 status: planned
-issue: null
+issue: https://github.com/ch0992/rollout-proof/issues/28
 pull_request: null
 evaluated_commit: null
 work_order: ../tasks/P0-022-work-order.md

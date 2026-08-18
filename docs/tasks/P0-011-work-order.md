@@ -1,12 +1,12 @@
 ---
 task_id: P0-011
 title: "Kubeconfig와 REST config loader"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E3
-issue: null
-branch: "feat/<issue-number>-p0-011-kube-config"
+issue: https://github.com/ch0992/rollout-proof/issues/17
+branch: "feat/17-p0-011-kube-config"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-011-evaluation.md
 ---
@@ -74,10 +74,10 @@ go test -race ./internal/kube/client
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-011-kube-config`
+- Branch: `feat/17-p0-011-kube-config`
 - Commit prefix: `[P0-011]`
 - PR title: `[P0-011] Kubeconfig와 REST config loader`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #17` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

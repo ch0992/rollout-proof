@@ -1,12 +1,12 @@
 ---
 task_id: P0-006
 title: "Event domain type 정의"
-status: draft
+status: backlog
 size: S
 milestone: Phase 0
 epic: P0-E2
-issue: null
-branch: "feat/<issue-number>-p0-006-event-domain-types"
+issue: https://github.com/ch0992/rollout-proof/issues/12
+branch: "feat/12-p0-006-event-domain-types"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-006-evaluation.md
 ---
@@ -84,10 +84,10 @@ go vet ./internal/timeline
 ## 12. 형상관리 계약
 
 - Issue: 생성 후 front matter에 기록
-- Branch: `feat/<issue-number>-p0-006-event-domain-types`
+- Branch: `feat/12-p0-006-event-domain-types`
 - Commit prefix: `[P0-006]`
 - PR title: `[P0-006] Event domain type 정의`
-- PR 본문: `Closes #<issue-number>`와 작업지시서/평가서 링크
+- PR 본문: `Closes #12`와 작업지시서/평가서 링크
 - merge 조건: 평가서 PASS와 required CI PASS
 
 ## 13. 완료 보고 형식

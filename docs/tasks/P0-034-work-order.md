@@ -1,12 +1,12 @@
 ---
 task_id: P0-034
 title: "실제 cluster Observe E2E"
-status: draft
+status: backlog
 size: M
 milestone: Phase 0
 epic: P0-E6
-issue: null
-branch: "feat/<issue-number>-p0-034-observe-e2e"
+issue: https://github.com/ch0992/rollout-proof/issues/40
+branch: "feat/40-p0-034-observe-e2e"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-034-evaluation.md
 ---
@@ -76,10 +76,10 @@ go test ./test/e2e -run TestObserve -count=1 -timeout=10m
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-034-observe-e2e`
+- Branch: `feat/40-p0-034-observe-e2e`
 - Commit prefix: `[P0-034]`
 - PR title: `[P0-034] 실제 cluster Observe E2E`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #40` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고

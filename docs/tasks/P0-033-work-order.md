@@ -1,12 +1,12 @@
 ---
 task_id: P0-033
 title: "Readiness/Endpoint gap 결함 fixture"
-status: draft
+status: backlog
 size: M
 milestone: Phase 0
 epic: P0-E6
-issue: null
-branch: "feat/<issue-number>-p0-033-endpoint-gap-fixture"
+issue: https://github.com/ch0992/rollout-proof/issues/39
+branch: "feat/39-p0-033-endpoint-gap-fixture"
 work_order_version: 1
 evaluation_document: ../evaluations/P0-033-evaluation.md
 ---
@@ -77,10 +77,10 @@ kubectl rollout status deployment/rolloutproof-endpoint-gap --timeout=120s
 
 ## 11. 형상관리 계약
 
-- Branch: `feat/<issue-number>-p0-033-endpoint-gap-fixture`
+- Branch: `feat/39-p0-033-endpoint-gap-fixture`
 - Commit prefix: `[P0-033]`
 - PR title: `[P0-033] Readiness/Endpoint gap 결함 fixture`
-- PR은 `Closes #<issue-number>` 및 작업지시서/평가서 링크를 포함한다.
+- PR은 `Closes #39` 및 작업지시서/평가서 링크를 포함한다.
 - 평가서 PASS와 required CI PASS 전에는 merge하지 않는다.
 
 ## 12. 완료 보고
