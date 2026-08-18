@@ -1,0 +1,10 @@
+cpu: 4
+memory: 8
+disk: 60
+arch: host
+runtime: docker
+kubernetes:
+  enabled: false
+autoActivate: false
+network:
+  address: false
