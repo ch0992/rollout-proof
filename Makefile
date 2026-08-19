@@ -8,10 +8,23 @@ APPLY ?= false
 ALLOW_DELETE ?= false
 LAST_ENV_RUN := .work/last-environment-run-id
 
-.PHONY: help env-check env-plan env-bootstrap runtime-up cluster-up cluster-down env-verify env-report
+.PHONY: help build test test-race lint env-check env-plan env-bootstrap runtime-up cluster-up cluster-down env-verify env-report
 
 help: ## Show available targets
 	@awk 'BEGIN {FS = ":.*## "} /^[a-zA-Z0-9_-]+:.*## / {printf "  %-18s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
+
+build: ## Build the RolloutProof CLI
+	@mkdir -p .work/bin
+	@go build -o .work/bin/rollout-proof ./cmd/rollout-proof
+
+test: ## Run all Go tests
+	@go test ./...
+
+test-race: ## Run all Go tests with the race detector
+	@go test -race ./...
+
+lint: ## Run standard Go static analysis
+	@go vet ./...
 
 env-check: ## Inspect tool and provider readiness without mutation
 	@scripts/env/bootstrap.sh

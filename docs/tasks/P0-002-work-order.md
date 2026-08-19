@@ -1,12 +1,13 @@
 ---
 task_id: P0-002
 title: "개발 기본 Make target 정의"
-status: ready
+status: completed
 size: XS
 milestone: Phase 0
 epic: P0-E1
 issue: https://github.com/ch0992/rollout-proof/issues/8
 branch: "feat/8-p0-002-make-targets"
+base_commit: 011b9a150f09164c1abf35e85dde08188fdf92ec
 work_order_version: 1
 evaluation_document: ../evaluations/P0-002-evaluation.md
 ---
@@ -54,11 +55,11 @@ Makefile은 얇은 command alias만 제공한다. 로컬 전용 절대 경로와
 
 ## 8. Acceptance Criteria
 
-- [ ] AC-1: `make build`가 CLI binary를 build한다.
-- [ ] AC-2: `make test`가 `go test ./...`를 실행한다.
-- [ ] AC-3: `make test-race`가 race detector를 사용한다.
-- [ ] AC-4: `make lint`가 현재 단계에 존재하는 표준 정적 검사를 실행한다.
-- [ ] AC-5: `make help`가 target 설명을 출력한다.
+- [x] AC-1: `make build`가 CLI binary를 build한다.
+- [x] AC-2: `make test`가 `go test ./...`를 실행한다.
+- [x] AC-3: `make test-race`가 race detector를 사용한다.
+- [x] AC-4: `make lint`가 현재 단계에 존재하는 표준 정적 검사를 실행한다.
+- [x] AC-5: `make help`가 target 설명을 출력한다.
 
 ## 9. 구현 절차
 
