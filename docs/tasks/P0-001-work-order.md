@@ -7,6 +7,7 @@ milestone: Phase 0
 epic: P0-E1
 issue: https://github.com/ch0992/rollout-proof/issues/7
 branch: "feat/7-p0-001-go-module-entrypoint"
+base_commit: 0fa2bf889d2da04e2e41ffdec1f31fbaaf4edc3f
 work_order_version: 1
 evaluation_document: ../evaluations/P0-001-evaluation.md
 ---
