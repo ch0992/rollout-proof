@@ -1,10 +1,10 @@
 ---
 task_id: P0-001
 title: "Go module과 CLI entrypoint 생성"
-status: planned
+status: evaluated
 issue: https://github.com/ch0992/rollout-proof/issues/7
-pull_request: null
-evaluated_commit: null
+pull_request: https://github.com/ch0992/rollout-proof/pull/80
+evaluated_commit: e174561d1f58346bd167216cd343754a001f62cc
 work_order: ../tasks/P0-001-work-order.md
 evaluation_version: 1
 verdict: null
@@ -21,8 +21,8 @@ verdict: null
 - Work order version: 1
 - Requirement ID: `ENG-FOUNDATION-001`
 - Issue: 생성 후 기록
-- PR: 생성 후 기록
-- Evaluated commit SHA: 구현 후 기록
+- PR: #80
+- Evaluated commit SHA: `e174561d1f58346bd167216cd343754a001f62cc`
 - 허용 주요 파일: `go.mod`, `cmd/rollout-proof/main.go`, `cmd/rollout-proof/main_test.go`
 
 commit SHA나 작업지시서 version이 바뀌면 영향받는 항목을 재평가한다.
@@ -31,21 +31,21 @@ commit SHA나 작업지시서 version이 바뀌면 영향받는 항목을 재평
 
 | AC | 검증 방법 | PASS 조건 | 결과 | Evidence |
 |---|---|---|---|---|
-| AC-1 | `go mod tidy` 및 관련 code inspection | `go.mod`가 Go 1.26을 선언한다. | 미평가 | |
-| AC-2 | `go test ./...` 및 관련 code inspection | `go build ./cmd/rollout-proof`가 성공한다. | 미평가 | |
-| AC-3 | `go build ./cmd/rollout-proof` 및 관련 code inspection | `go test ./...`가 성공한다. | 미평가 | |
-| AC-4 | `go build ./cmd/rollout-proof` 및 관련 code inspection | main에 domain 또는 adapter logic이 없다. | 미평가 | |
+| AC-1 | `go mod tidy` 및 관련 code inspection | `go.mod`가 Go 1.26을 선언한다. | PASS | module은 `github.com/ch0992/rollout-proof`, language version은 `go 1.26`; tidy 후 diff 없음 |
+| AC-2 | `go test ./...` 및 관련 code inspection | `go build ./cmd/rollout-proof`가 성공한다. | PASS | Go 1.26.2로 temporary output binary build 및 실행 exit 0, stdout/stderr empty |
+| AC-3 | `go build ./cmd/rollout-proof` 및 관련 code inspection | `go test ./...`가 성공한다. | PASS | `go test -count=1 ./...`: PASS |
+| AC-4 | `go build ./cmd/rollout-proof` 및 관련 code inspection | main에 domain 또는 adapter logic이 없다. | PASS | `main.go`는 package 선언과 빈 `main` 3줄뿐이며 외부 import 없음 |
 
 ## 4. 필수 평가
 
 | 항목 | PASS 조건 | 결과 | Evidence |
 |---|---|---|---|
-| Correctness | 모든 AC가 PASS | 미평가 | |
-| Scope | 제외 범위 구현과 무관한 변경 없음 | 미평가 | |
-| Tests | 지정 command와 영향 package test PASS | 미평가 | |
-| Safety | 오류/취소/출력/파일 안전 조건 위반 없음 | 미평가 | |
-| Maintainability | package 책임 유지, 전역 상태와 불필요한 추상화 없음 | 미평가 | |
-| Documentation | 계약 또는 결정 변경이 해당 문서에 반영됨 | 미평가 | |
+| Correctness | 모든 AC가 PASS | PASS | AC-1~4 전체 PASS |
+| Scope | 제외 범위 구현과 무관한 변경 없음 | PASS | 예상 source/test 3파일과 base SHA 추적 문서만 변경; Cobra/version/Kubernetes/HTTP 없음 |
+| Tests | 지정 command와 영향 package test PASS | PASS | tidy, uncached test, vet, build, binary execution PASS |
+| Safety | 오류/취소/출력/파일 안전 조건 위반 없음 | PASS | 빈 main은 전역 상태, I/O, mutation을 수행하지 않음 |
+| Maintainability | package 책임 유지, 전역 상태와 불필요한 추상화 없음 | PASS | entrypoint가 향후 wiring 위치로만 존재 |
+| Documentation | 계약 또는 결정 변경이 해당 문서에 반영됨 | PASS | 기존 ENG-FOUNDATION-001/ADR-0001 계약 그대로 구현; 새 결정 없음 |
 
 ## 5. 평가 명령
 
@@ -72,18 +72,22 @@ go build ./cmd/rollout-proof
 ## 8. 평가 결과
 
 ```text
-Verdict: PASS | FAIL | INCONCLUSIVE
+Verdict: PASS
 
-AC-1: 미평가
-AC-2: 미평가
-AC-3: 미평가
-AC-4: 미평가
-Scope: 미평가
-Tests: 미평가
-Safety: 미평가
-Maintainability: 미평가
-Documentation: 미평가
+AC-1: PASS
+AC-2: PASS
+AC-3: PASS
+AC-4: PASS
+Scope: PASS
+Tests: PASS
+Safety: PASS
+Maintainability: PASS
+Documentation: PASS
 ```
+
+Negative evidence: 임시 module에서 `main.go`를 제외하고 같은 test를 실행하면 exit 1과 `no non-test Go files`가 발생했다. 따라서 test가 entrypoint 부재를 silent success로 처리하지 않는다.
+
+Known limitation: Go unit/build CI는 P0-004 범위이며 현재 required Go CI check는 없다. 본 Task는 사전 평가서의 로컬 재현 명령으로 gate했다.
 
 ## 9. 실패 시 재작업 계약
 
@@ -94,8 +98,7 @@ Documentation: 미평가
 
 ## 10. 최종 승인
 
-- Evaluator:
-- Evaluated at:
-- Verdict:
-- Evidence commit/artifact:
-
+- Evaluator: Codex
+- Evaluated at: 2026-08-19
+- Verdict: PASS
+- Evidence commit/artifact: `e174561d1f58346bd167216cd343754a001f62cc`
