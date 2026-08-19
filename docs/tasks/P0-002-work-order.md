@@ -1,7 +1,7 @@
 ---
 task_id: P0-002
 title: "개발 기본 Make target 정의"
-status: backlog
+status: ready
 size: XS
 milestone: Phase 0
 epic: P0-E1
@@ -102,4 +102,3 @@ Acceptance evidence:
 Known limitations:
 Commit SHA:
 ```
-
