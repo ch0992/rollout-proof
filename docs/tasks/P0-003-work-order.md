@@ -1,7 +1,7 @@
 ---
 task_id: P0-003
 title: "Cobra root command와 출력 channel 분리"
-status: backlog
+status: ready
 size: S
 milestone: Phase 0
 epic: P0-E1
@@ -105,4 +105,3 @@ Acceptance evidence:
 Known limitations:
 Commit SHA:
 ```
-
