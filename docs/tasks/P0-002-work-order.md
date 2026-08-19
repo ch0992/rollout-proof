@@ -7,6 +7,7 @@ milestone: Phase 0
 epic: P0-E1
 issue: https://github.com/ch0992/rollout-proof/issues/8
 branch: "feat/8-p0-002-make-targets"
+base_commit: 011b9a150f09164c1abf35e85dde08188fdf92ec
 work_order_version: 1
 evaluation_document: ../evaluations/P0-002-evaluation.md
 ---
