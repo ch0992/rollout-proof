@@ -1,10 +1,10 @@
 ---
 task_id: P0-002
 title: "개발 기본 Make target 정의"
-status: planned
+status: evaluated
 issue: https://github.com/ch0992/rollout-proof/issues/8
-pull_request: null
-evaluated_commit: null
+pull_request: https://github.com/ch0992/rollout-proof/pull/82
+evaluated_commit: 9ca4de7cc6dee03cb9a6f691fdd4900b2dc29800
 work_order: ../tasks/P0-002-work-order.md
 evaluation_version: 1
 verdict: null
@@ -21,8 +21,8 @@ verdict: null
 - Work order version: 1
 - Requirement ID: `ENG-FOUNDATION-002`
 - Issue: 생성 후 기록
-- PR: 생성 후 기록
-- Evaluated commit SHA: 구현 후 기록
+- PR: #82
+- Evaluated commit SHA: `9ca4de7cc6dee03cb9a6f691fdd4900b2dc29800`
 - 허용 주요 파일: `Makefile`, `docs/development.md`
 
 commit SHA나 작업지시서 version이 바뀌면 영향받는 항목을 재평가한다.
@@ -31,22 +31,22 @@ commit SHA나 작업지시서 version이 바뀌면 영향받는 항목을 재평
 
 | AC | 검증 방법 | PASS 조건 | 결과 | Evidence |
 |---|---|---|---|---|
-| AC-1 | `make help` 및 관련 code inspection | `make build`가 CLI binary를 build한다. | 미평가 | |
-| AC-2 | `make build test` 및 관련 code inspection | `make test`가 `go test ./...`를 실행한다. | 미평가 | |
-| AC-3 | `make test-race lint` 및 관련 code inspection | `make test-race`가 race detector를 사용한다. | 미평가 | |
-| AC-4 | `make test-race lint` 및 관련 code inspection | `make lint`가 현재 단계에 존재하는 표준 정적 검사를 실행한다. | 미평가 | |
-| AC-5 | `make test-race lint` 및 관련 code inspection | `make help`가 target 설명을 출력한다. | 미평가 | |
+| AC-1 | `make help` 및 관련 code inspection | `make build`가 CLI binary를 build한다. | PASS | `.work/bin/rollout-proof` executable 생성, 실행 exit 0 및 출력 없음 |
+| AC-2 | `make build test` 및 관련 code inspection | `make test`가 `go test ./...`를 실행한다. | PASS | dry-run 명령 일치, test cache 정리 후 전체 package PASS |
+| AC-3 | `make test-race lint` 및 관련 code inspection | `make test-race`가 race detector를 사용한다. | PASS | `go test -race ./...` 실행 및 PASS |
+| AC-4 | `make test-race lint` 및 관련 code inspection | `make lint`가 현재 단계에 존재하는 표준 정적 검사를 실행한다. | PASS | `go vet ./...` 실행 및 PASS; 외부 lint dependency 없음 |
+| AC-5 | `make test-race lint` 및 관련 code inspection | `make help`가 target 설명을 출력한다. | PASS | 신규 4개와 기존 환경 target 설명 모두 출력 |
 
 ## 4. 필수 평가
 
 | 항목 | PASS 조건 | 결과 | Evidence |
 |---|---|---|---|
-| Correctness | 모든 AC가 PASS | 미평가 | |
-| Scope | 제외 범위 구현과 무관한 변경 없음 | 미평가 | |
-| Tests | 지정 command와 영향 package test PASS | 미평가 | |
-| Safety | 오류/취소/출력/파일 안전 조건 위반 없음 | 미평가 | |
-| Maintainability | package 책임 유지, 전역 상태와 불필요한 추상화 없음 | 미평가 | |
-| Documentation | 계약 또는 결정 변경이 해당 문서에 반영됨 | 미평가 | |
+| Correctness | 모든 AC가 PASS | PASS | AC-1~5 전체 PASS |
+| Scope | 제외 범위 구현과 무관한 변경 없음 | PASS | Makefile, 개발 명령 문서, base SHA만 변경; kind/release/CI 미변경 |
+| Tests | 지정 command와 영향 package test PASS | PASS | build, uncached test, race, vet, 환경 Make 회귀 PASS |
+| Safety | 오류/취소/출력/파일 안전 조건 위반 없음 | PASS | artifact는 ignored `.work`에만 생성; Go 누락 시 exit 2로 실패 |
+| Maintainability | package 책임 유지, 전역 상태와 불필요한 추상화 없음 | PASS | 모든 target이 표준 Go 명령의 얇은 alias |
+| Documentation | 계약 또는 결정 변경이 해당 문서에 반영됨 | PASS | `docs/development.md`에 target/실제 명령/결과 기록 |
 
 ## 5. 평가 명령
 
@@ -73,19 +73,23 @@ make test-race lint
 ## 8. 평가 결과
 
 ```text
-Verdict: PASS | FAIL | INCONCLUSIVE
+Verdict: PASS
 
-AC-1: 미평가
-AC-2: 미평가
-AC-3: 미평가
-AC-4: 미평가
-AC-5: 미평가
-Scope: 미평가
-Tests: 미평가
-Safety: 미평가
-Maintainability: 미평가
-Documentation: 미평가
+AC-1: PASS
+AC-2: PASS
+AC-3: PASS
+AC-4: PASS
+AC-5: PASS
+Scope: PASS
+Tests: PASS
+Safety: PASS
+Maintainability: PASS
+Documentation: PASS
 ```
+
+Negative evidence: `PATH=/usr/bin:/bin /usr/bin/make test`는 Go를 찾지 못해 exit 2로 실패했다. tool 누락을 silent success로 처리하지 않는다.
+
+Known limitation: Go unit/build CI는 P0-004 범위이며 현재 required Go CI check는 없다.
 
 ## 9. 실패 시 재작업 계약
 
@@ -96,8 +100,7 @@ Documentation: 미평가
 
 ## 10. 최종 승인
 
-- Evaluator:
-- Evaluated at:
-- Verdict:
-- Evidence commit/artifact:
-
+- Evaluator: Codex
+- Evaluated at: 2026-08-19
+- Verdict: PASS
+- Evidence commit/artifact: `9ca4de7cc6dee03cb9a6f691fdd4900b2dc29800`
