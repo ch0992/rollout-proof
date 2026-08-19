@@ -1,12 +1,13 @@
 ---
 task_id: P0-001
 title: "Go module과 CLI entrypoint 생성"
-status: ready
+status: completed
 size: XS
 milestone: Phase 0
 epic: P0-E1
 issue: https://github.com/ch0992/rollout-proof/issues/7
 branch: "feat/7-p0-001-go-module-entrypoint"
+base_commit: 0fa2bf889d2da04e2e41ffdec1f31fbaaf4edc3f
 work_order_version: 1
 evaluation_document: ../evaluations/P0-001-evaluation.md
 ---
@@ -57,10 +58,10 @@ module path는 `github.com/ch0992/rollout-proof`를 사용한다. main은 packag
 
 ## 8. Acceptance Criteria
 
-- [ ] AC-1: `go.mod`가 Go 1.26을 선언한다.
-- [ ] AC-2: `go build ./cmd/rollout-proof`가 성공한다.
-- [ ] AC-3: `go test ./...`가 성공한다.
-- [ ] AC-4: main에 domain 또는 adapter logic이 없다.
+- [x] AC-1: `go.mod`가 Go 1.26을 선언한다.
+- [x] AC-2: `go build ./cmd/rollout-proof`가 성공한다.
+- [x] AC-3: `go test ./...`가 성공한다.
+- [x] AC-4: main에 domain 또는 adapter logic이 없다.
 
 ## 9. 구현 절차
 
